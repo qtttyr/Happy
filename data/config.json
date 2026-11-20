@@ -1,0 +1,7 @@
+{
+  "tau_high": 0.30,
+  "tau_mid": 0.19,
+  "max_chars": 300,
+  "target_chars": 210,
+  "bm25": {"k1": 1.5, "b": 0.75}
+}
