@@ -1,0 +1,38 @@
+{
+  "science": {
+    "rows": 184,
+    "variants": 186
+  },
+  "astana": {
+    "rows": 131,
+    "variants": 132
+  },
+  "social": {
+    "rows": 162,
+    "variants": 163
+  },
+  "traps": {
+    "rows": 116,
+    "variants": 117
+  },
+  "everyday": {
+    "rows": 135,
+    "variants": 135
+  },
+  "opinions": {
+    "rows": 120,
+    "variants": 120
+  },
+  "smalltalk": {
+    "rows": 108,
+    "variants": 108
+  },
+  "math": {
+    "rows": 55,
+    "variants": 55
+  },
+  "fallbacks": {
+    "rows": 30,
+    "variants": 30
+  }
+}

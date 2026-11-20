@@ -10,3 +10,5 @@ artifacts_smoke/
 artifacts_test/
 happy-artifacts-*.zip
 artifacts/checkpoints/
+
+private/

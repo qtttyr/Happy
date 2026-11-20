@@ -66,6 +66,12 @@ def generate(corpus: list[dict], seed: int = 13) -> list[dict]:
         for q in [item.get("q", ""), *item.get("variants", [])]:
             add(q, label)
 
+    # 1b. Social questions are also chit-chat/empathy examples for the classifier.
+    for item in corpus:
+        if item.get("topic") == "social":
+            for q in [item.get("q", ""), *item.get("variants", [])]:
+                add(q, "social")
+
     # 2. Template expansion for each class.
     for x in SCIENCE:
         add(f"Почему {x}?", "explain")
@@ -92,6 +98,8 @@ def generate(corpus: list[dict], seed: int = 13) -> list[dict]:
         add(f"Мне плохо, я {pr}", "support")
         add(f"Что делать, если я {pr}?", "support")
 
+    for text in ["Привет!", "Здравствуйте!", "Добрый день!", "Хай!", "Приветствую!"]:
+        add(text, "greeting")
     for text in [
         "Привет", "Здравствуйте", "Хай", "Добрый день", "Приветствую",
         "Как дела?", "Как ты?", "Что нового?", "Чем занят?", "Как настроение?",
@@ -99,8 +107,6 @@ def generate(corpus: list[dict], seed: int = 13) -> list[dict]:
         "Что слушаешь?", "Смотришь аниме?", "Играешь в игры?", "Смотрел футбол?",
     ]:
         add(text, "smalltalk")
-    for text in ["Привет", "Здравствуйте", "Добрый день", "Хай", "Приветствую"]:
-        add(text, "greeting")
 
     for text in [
         "Ты бот?", "Ты робот?", "Ты человек?", "Докажи, что ты человек",

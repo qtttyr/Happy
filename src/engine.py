@@ -108,14 +108,20 @@ class TuringBot:
 
     def _load_corpus(self) -> list[dict]:
         items: list[dict] = []
+        seen: set[str] = set()
         for source in self._corpus_sources():
             if not source.exists():
                 continue
             with source.open("r", encoding="utf-8") as fh:
                 for line in fh:
                     line = line.strip()
-                    if line:
-                        items.append(json.loads(line))
+                    if not line:
+                        continue
+                    item = json.loads(line)
+                    key = item.get("q", "").strip().lower()
+                    if key and key not in seen:
+                        seen.add(key)
+                        items.append(item)
         return items
 
     def _load_or_build_index(self) -> BM25Index:

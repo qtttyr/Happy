@@ -68,8 +68,10 @@ def _fmt(value: float) -> str:
 
 
 def _percent(q: str) -> Solution | None:
-    m = re.search(r"(\d+(?:[.,]\d+)?)\s*%?\s*(?:от|из)\s*(\d+(?:[.,]\d+)?)", q)
-    if not m or "%" not in q:
+    m = re.search(
+        r"(\d+(?:[.,]\d+)?)\s*(?:%|процент(?:ов|а)?)?\s*(?:от|из)\s*(\d+(?:[.,]\d+)?)", q
+    )
+    if not m or ("%" not in q and "процент" not in q):
         return None
     pct = float(m.group(1).replace(",", "."))
     base = float(m.group(2).replace(",", "."))
@@ -116,6 +118,71 @@ def _sequence(q: str) -> Solution | None:
     return None
 
 
+
+
+NUM_WORDS = {
+    "один": 1, "одна": 1, "два": 2, "две": 2, "три": 3, "четыре": 4, "пять": 5,
+    "шесть": 6, "семь": 7, "восемь": 8, "девять": 9, "десять": 10,
+    "одиннадцать": 11, "двенадцать": 12,
+    "двух": 2, "трех": 3, "четырех": 4, "пяти": 5, "шести": 6,
+    "семи": 7, "восьми": 8, "девяти": 9, "десяти": 10,
+}
+
+
+def _num(token: str) -> int | None:
+    if token.isdigit():
+        return int(token)
+    return NUM_WORDS.get(token)
+
+
+def _simple_math(q: str) -> Solution | None:
+    m = re.search(r"(\d+)\s*(?:умножить|\*)\s*(?:на\s*)?(\d+)", q)
+    if m:
+        return Solution(str(int(m.group(1)) * int(m.group(2))), "math")
+    m = re.search(r"(\d+)\s*(?:разделить|поделить)\s*на\s*(\d+)", q)
+    if m and int(m.group(2)) != 0:
+        return Solution(_fmt(int(m.group(1)) / int(m.group(2))), "math")
+    m = re.search(r"(\d+)\s*в\s*квадрате", q)
+    if m:
+        return Solution(str(int(m.group(1)) ** 2), "math")
+    m = re.search(r"(\d+)\s*в\s*кубе", q)
+    if m:
+        return Solution(str(int(m.group(1)) ** 3), "math")
+    m = re.search(r"площадь\s*(\d+)\s*(?:на|x|х|\*)\s*(\d+)", q)
+    if m:
+        return Solution(str(int(m.group(1)) * int(m.group(2))), "math")
+    m = re.search(r"периметр\s*квадрата\s*(?:со\s*стороной\s*)?(\d+)", q)
+    if m:
+        return Solution(str(4 * int(m.group(1))), "math")
+    m = re.search(r"среднее\s*(?:из\s*)?(\d+)[,\s]+(\d+)[,\s]+(?:и\s*)?(\d+)", q)
+    if m:
+        vals = [int(m.group(i)) for i in (1, 2, 3)]
+        return Solution(_fmt(sum(vals) / 3), "math")
+    m = re.search(r"(\d+)\s*км/ч\s*(?:за\s*)?(\d+)\s*час", q)
+    if m:
+        return Solution(str(int(m.group(1)) * int(m.group(2))), "math")
+    m = re.search(r"(\d+)\s*км\s*за\s*(\d+)\s*час", q)
+    if m and int(m.group(2)) != 0:
+        return Solution(_fmt(int(m.group(1)) / int(m.group(2))), "math")
+    m = re.search(
+        r"сколько\s+(минут|секунд|часов)\s+в\s+([а-я\d]+)\s+"
+        r"(час[а-я]*|минут[а-я]*|секунд[а-я]*)",
+        q,
+    )
+    if m:
+        value = _num(m.group(2))
+        if value:
+            raw_from = m.group(3)
+            unit_from = "час" if raw_from.startswith("час") else (
+                "минут" if raw_from.startswith("минут") else "секунд"
+            )
+            unit_to = m.group(1)
+            seconds = {"час": 3600, "минут": 60, "секунд": 1}[unit_from] * value
+            result = seconds / {"минут": 60, "секунд": 1, "часов": 3600}[unit_to]
+            return Solution(_fmt(result), "math")
+    return None
+
+
 def solve(question: str) -> Solution | None:
     q = normalize(question)
 
@@ -129,6 +196,10 @@ def solve(question: str) -> Solution | None:
     if sol:
         return sol
     sol = _sequence(q)
+    if sol:
+        return sol
+
+    sol = _simple_math(q)
     if sol:
         return sol
 

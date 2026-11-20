@@ -92,8 +92,8 @@ def clean_pair(q: str, a: str) -> tuple[str, str] | None:
 def load_corpus() -> list[dict]:
     items: list[dict] = []
     seen: set[str] = set()
-    for name in ("curated_qa.jsonl", "extra_qa.jsonl"):
-        for item in load_jsonl(ROOT / "data" / name):
+    for path in sorted((ROOT / "data").glob("*_qa.jsonl")):
+        for item in load_jsonl(path):
             key = item.get("q", "").strip().lower()
             if key and key not in seen:
                 seen.add(key)

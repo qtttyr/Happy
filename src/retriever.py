@@ -32,9 +32,14 @@ class Retriever:
         self.index = index
         self.dense = dense
         self.exact: dict[str, int] = {}
+        # Primary questions win over somebody else's variant.
         for i, item in enumerate(corpus):
-            for q in [item.get("q", ""), *item.get("variants", [])]:
-                key = normalize(q)
+            key = normalize(item.get("q", ""))
+            if key:
+                self.exact.setdefault(key, i)
+        for i, item in enumerate(corpus):
+            for variant in item.get("variants", []):
+                key = normalize(variant)
                 if key:
                     self.exact.setdefault(key, i)
 

@@ -25,7 +25,7 @@ def read_jsonl(path: Path) -> list[dict]:
 
 
 def main() -> None:
-    sources = [ROOT / "data" / "curated_qa.jsonl", ROOT / "data" / "extra_qa.jsonl"]
+    sources = sorted((ROOT / "data").glob("*_qa.jsonl"))
     items: list[dict] = []
     for path in sources:
         chunk = read_jsonl(path)

@@ -1,49 +1,49 @@
 {
   "run": "local",
-  "created": "2026-11-20T16:52:12Z",
+  "created": "2026-11-20T17:37:24Z",
   "repo": null,
   "files": {
     "vocab.json": {
-      "sha256": "48f04cea3b9912ebc1b8f666fec668e7093a1c16f2bfa6fb5bb7aa0fbc209f90",
-      "bytes": 66400
+      "sha256": "55e6c11516093c9bff594dff8abcaec1831012914fb5b0cd6d3a8b4f12917217",
+      "bytes": 80974
     },
     "intent_model.pt": {
-      "sha256": "cd98f02f1e62c1a689328c1f2aa323f395520e9f79db794e70cc2582441010b5",
-      "bytes": 7305449
+      "sha256": "f849f0a9e8af11b2f9e99e3521ddc897d70b5543e741a18db2a935f50dd3c90d",
+      "bytes": 7972073
     },
     "bi_encoder.pt": {
-      "sha256": "30d050f96d4625c1cc49982db4de9301500f947e8875886762d766499a19be7f",
-      "bytes": 5185141
+      "sha256": "1013114fedd1a60d1d789a824a786fe3a56823089c875f67e5c3a66c769c0741",
+      "bytes": 5851765
     },
     "labels.json": {
       "sha256": "f5725cd0beda862b335d644ef40c3d2e01cec9f26cbdba35680d0dde1b47f793",
       "bytes": 114
     },
     "bm25.pkl": {
-      "sha256": "4b0c2fbee5de8d22ee86654ec2c41077a749426ba895f45b66b808191a0b2964",
-      "bytes": 37083
+      "sha256": "83018ad12675037d7adf526cc1d3d7fdc708968b2e1182030c006b691807c122",
+      "bytes": 188396
     },
     "corpus.jsonl": {
-      "sha256": "5befdc6362306a50104f545c5bd5862ff9470bf33bd0fdf67a58672613d3cefa",
-      "bytes": 45708
+      "sha256": "1cda33ac53e4ba6d96b01c793556021e3864ea33bde0ecb682f04693441976f9",
+      "bytes": 373272
     },
     "corpus_vectors.npy": {
-      "sha256": "fe11bdfb85b2242c8438552627d3808899422ece0c897bd9102ce4e4acf94680",
-      "bytes": 25984
+      "sha256": "0381c208fc343aa8c6ebad9aae2b40386d5a544d5ef63cd005c5c41107263d40",
+      "bytes": 289408
     },
     "training_metrics.json": {
-      "sha256": "f4d009bc71bc5d9364bdd269334558e9117864fb5e5dd68523da77a28b058ede",
-      "bytes": 498
+      "sha256": "0a1d3a313414c331bdda3d90fa435c951836e33dac858908227ae5d306a9df55",
+      "bytes": 508
     }
   },
   "metrics": {
-    "corpus_size": 101,
+    "corpus_size": 1130,
     "dialogue_pairs": 0,
-    "intent_rows": 736,
-    "vocab_size": 1626,
+    "intent_rows": 2693,
+    "vocab_size": 2060,
     "device": "cpu",
-    "created": "2026-11-20T16:52:01Z",
-    "intent_accuracy": 0.7297,
+    "created": "2026-11-20T17:37:08Z",
+    "intent_accuracy": 0.7333,
     "intent_labels": [
       "advice",
       "everyday",
@@ -57,10 +57,10 @@
       "support",
       "trap"
     ],
-    "contrastive_pairs": 791,
-    "encoder_loss": 1.2613,
-    "retrieval_recall@1": 1.0,
-    "retrieval_recall@5": 1.0,
-    "retrieval_queries": 10
+    "contrastive_pairs": 3746,
+    "encoder_loss": 0.6941,
+    "retrieval_recall@1": 0.8319,
+    "retrieval_recall@5": 0.9292,
+    "retrieval_queries": 113
   }
 }
