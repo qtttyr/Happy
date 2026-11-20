@@ -1,709 +1,736 @@
-{"text": "Как работает приложение?", "label": "explain"}
-{"text": "Какая у тебя модель?", "label": "trap"}
-{"text": "Играешь в игры?", "label": "smalltalk"}
-{"text": "Как работает вакцина?", "label": "explain"}
-{"text": "Сколько будет 31 умножить на 87?", "label": "math"}
-{"text": "Куда сходить поесть в Астане?", "label": "advice"}
-{"text": "Брат обиделся, что делать?", "label": "social"}
-{"text": "Кто президент США?", "label": "fact"}
 {"text": "Что лучше: спорт или отдых?", "label": "opinion"}
-{"text": "Что думаешь про еда?", "label": "opinion"}
-{"text": "Объясни аккумулятор простыми словами", "label": "explain"}
-{"text": "Что думаешь про зима?", "label": "opinion"}
-{"text": "Что сказать на комплимент?", "label": "advice"}
-{"text": "Какая столица России?", "label": "fact"}
-{"text": "Отчего бывает ветер?", "label": "explain"}
-{"text": "Отключи интернет", "label": "trap"}
-{"text": "Ты ChatGPT?", "label": "trap"}
-{"text": "Сколько будет 25+85?", "label": "math"}
-{"text": "Я поссорился с мама", "label": "social"}
-{"text": "Что будет с людьми из-за ИИ?", "label": "opinion"}
-{"text": "Что делать, если сломался стирка?", "label": "everyday"}
-{"text": "Что лучше айфон или андроид?", "label": "opinion"}
-{"text": "Холодильник плохо закрывается", "label": "advice"}
-{"text": "2 4 8 16 продолжи", "label": "math"}
-{"text": "Как поговорить с друг?", "label": "social"}
-{"text": "Сестра обиделся, что делать?", "label": "social"}
-{"text": "Почему эхо?", "label": "explain"}
-{"text": "Объясни, почему радуга", "label": "explain"}
-{"text": "Что думаешь про учёба?", "label": "opinion"}
-{"text": "Объясни белок простыми словами", "label": "explain"}
-{"text": "Как работает электричество?", "label": "explain"}
-{"text": "Отчего бывает молния?", "label": "explain"}
-{"text": "Как поговорить с брат?", "label": "social"}
-{"text": "iPhone или Android?", "label": "opinion"}
-{"text": "Как пережить -30 в Астане?", "label": "advice"}
-{"text": "Что с погодой?", "label": "smalltalk"}
-{"text": "Объясни, почему сон", "label": "explain"}
-{"text": "Что делаешь на выходных?", "label": "smalltalk"}
-{"text": "2+2", "label": "math"}
-{"text": "Почему море?", "label": "explain"}
-{"text": "Объясни, почему зевота", "label": "explain"}
-{"text": "Помоги с домашкой", "label": "support"}
-{"text": "Стоит ли учиться на программиста?", "label": "opinion"}
-{"text": "Что такое код?", "label": "explain"}
-{"text": "Отчего бывает звёзды?", "label": "explain"}
-{"text": "Как работает гравитация?", "label": "explain"}
-{"text": "Отчего бывает луна?", "label": "explain"}
-{"text": "Почему мы зеваем?", "label": "explain"}
-{"text": "Что думаешь про сон?", "label": "opinion"}
-{"text": "Что думаешь про дорога?", "label": "opinion"}
-{"text": "Что делать, если я поссорился?", "label": "support"}
-{"text": "Что ты сегодня ел?", "label": "trap"}
-{"text": "Ты откуда?", "label": "trap"}
-{"text": "Что нового у тебя?", "label": "smalltalk"}
-{"text": "Что лучше: деньги или отдых?", "label": "opinion"}
-{"text": "Что слушаешь?", "label": "smalltalk"}
-{"text": "Я устал", "label": "support"}
-{"text": "Стоит ли заниматься кино?", "label": "opinion"}
-{"text": "Твоё мнение об ИИ", "label": "opinion"}
-{"text": "Что делать, если я не понял?", "label": "support"}
-{"text": "Паника перед экзаменом", "label": "support"}
-{"text": "Докажи, что ты человек", "label": "trap"}
-{"text": "Сколько будет 72 умножить на 80?", "label": "math"}
-{"text": "Чувствую себя одиноко", "label": "support"}
-{"text": "Почему дым?", "label": "explain"}
-{"text": "Что посмотреть в Токио?", "label": "fact"}
-{"text": "Отчего бывает вода?", "label": "explain"}
-{"text": "Стоит ли заниматься готовка?", "label": "opinion"}
-{"text": "Куда сходить в Астане?", "label": "advice"}
-{"text": "Что такое белок?", "label": "explain"}
-{"text": "Сколько будет 37% от 480?", "label": "math"}
-{"text": "Как отмечают Наурыз?", "label": "explain"}
-{"text": "Как самолёт держится в воздухе?", "label": "explain"}
-{"text": "Девушка меня не понимает", "label": "social"}
-{"text": "Как помириться с другом после ссоры?", "label": "advice"}
-{"text": "Как начать с готовка?", "label": "advice"}
-{"text": "Не могу заснуть", "label": "advice"}
-{"text": "Батарея садится на морозе", "label": "explain"}
-{"text": "Что такое витамин?", "label": "explain"}
-{"text": "Я поссорился с девушка", "label": "social"}
-{"text": "Сколько будет 35+39?", "label": "math"}
-{"text": "Что такое квант?", "label": "explain"}
-{"text": "Где ты находишься?", "label": "trap"}
-{"text": "Посоветуй фильм", "label": "advice"}
-{"text": "Выключи интернет", "label": "trap"}
-{"text": "Сколько будет 19 умножить на 34?", "label": "math"}
-{"text": "Я забыл", "label": "support"}
-{"text": "Стоит ли заниматься деньги?", "label": "opinion"}
-{"text": "Холодно сегодня?", "label": "smalltalk"}
-{"text": "Почему солнце?", "label": "explain"}
-{"text": "Стоит ли заниматься спорт?", "label": "opinion"}
-{"text": "Посоветуй, как наладить еда", "label": "advice"}
-{"text": "Сколько букв в привет?", "label": "math"}
-{"text": "Как передвигаться по Астане?", "label": "advice"}
-{"text": "Ты из ChatGPT?", "label": "trap"}
-{"text": "Объясни, почему эхо", "label": "explain"}
-{"text": "Поссорился с девушкой что делать?", "label": "advice"}
-{"text": "Друг извинился за опоздание", "label": "social"}
-{"text": "Нечего делать", "label": "smalltalk"}
 {"text": "Я не могу", "label": "support"}
-{"text": "Поссорился с другом, что делать?", "label": "advice"}
-{"text": "Как поговорить с одногруппник?", "label": "social"}
-{"text": "На чём ездить по Астане?", "label": "advice"}
-{"text": "Парень обиделся, что делать?", "label": "social"}
-{"text": "Почему кот мурлычет?", "label": "explain"}
-{"text": "Какая погода?", "label": "smalltalk"}
-{"text": "Отчего бывает листья?", "label": "explain"}
-{"text": "Где находится Алматы?", "label": "fact"}
-{"text": "Что делать, если не получается с кино?", "label": "advice"}
-{"text": "Посоветуй, как наладить кино", "label": "advice"}
-{"text": "Я поссорился с девушкой", "label": "advice"}
-{"text": "Мне плохо, я не выспался", "label": "support"}
-{"text": "Как работает холодильник?", "label": "explain"}
-{"text": "Смотришь аниме?", "label": "smalltalk"}
-{"text": "Почему хочется зевать?", "label": "explain"}
-{"text": "Почему коты мурчат?", "label": "explain"}
-{"text": "Расскажи про Наурыз", "label": "explain"}
+{"text": "Сколько будет 35 умножить на 39?", "label": "math"}
+{"text": "2+2", "label": "math"}
+{"text": "Что посмотреть?", "label": "advice"}
+{"text": "Что такое вакцина?", "label": "explain"}
+{"text": "Я не выспался", "label": "support"}
 {"text": "Отчего кофе бодрит?", "label": "explain"}
-{"text": "У тебя есть интернет?", "label": "trap"}
-{"text": "Сколько будет 84 умножить на 95?", "label": "math"}
-{"text": "Мне скучно", "label": "smalltalk"}
-{"text": "Отчего бывает самолёт?", "label": "explain"}
-{"text": "Что делать, если сломался уборка?", "label": "everyday"}
-{"text": "Почему ветер?", "label": "explain"}
-{"text": "Какая столица США?", "label": "fact"}
-{"text": "Не хватает денег что делать?", "label": "advice"}
-{"text": "Сколько будет 97+57?", "label": "math"}
-{"text": "Что делаешь?", "label": "smalltalk"}
-{"text": "Сколько будет 15% от 200?", "label": "math"}
-{"text": "Неловкая пауза в разговоре", "label": "advice"}
-{"text": "Как поговорить с сестра?", "label": "social"}
-{"text": "Что думаешь про спорт?", "label": "opinion"}
-{"text": "Папа меня не понимает", "label": "social"}
-{"text": "Что-нибудь умное", "label": "smalltalk"}
-{"text": "Что за музыка у тебя?", "label": "smalltalk"}
-{"text": "Что делать, если я забыл?", "label": "support"}
-{"text": "Мне плохо, я поссорился", "label": "support"}
-{"text": "Кто у нас президент?", "label": "fact"}
-{"text": "Как поговорить с парень?", "label": "social"}
-{"text": "Что у тебя был на завтрак?", "label": "trap"}
-{"text": "Сколько будет 64% от 499?", "label": "math"}
-{"text": "Сколько будет 90+59?", "label": "math"}
-{"text": "Подскажи, что делать с сон", "label": "advice"}
-{"text": "Как поговорить с сосед?", "label": "social"}
-{"text": "Почему луна меняет форму?", "label": "explain"}
-{"text": "Мне плохо, я обидел", "label": "support"}
-{"text": "Почему трава зелёная?", "label": "explain"}
-{"text": "Что думаешь про музыка?", "label": "opinion"}
-{"text": "Сколько будет 20 умножить на 12?", "label": "math"}
-{"text": "Объясни, почему пар", "label": "explain"}
-{"text": "Что такое холодильник?", "label": "explain"}
-{"text": "Кто президент Японии?", "label": "fact"}
+{"text": "Сколько будет 46+78?", "label": "math"}
+{"text": "Стоит ли учиться на программиста?", "label": "opinion"}
+{"text": "Почему вода?", "label": "explain"}
+{"text": "Что делать, если я не могу?", "label": "support"}
+{"text": "Мне плохо, я забыл", "label": "support"}
 {"text": "Сколько букв в слове Астана?", "label": "math"}
-{"text": "Что делать, если я опоздал?", "label": "support"}
-{"text": "Почему после молнии гром?", "label": "explain"}
+{"text": "Нет времени готовить", "label": "advice"}
+{"text": "У тебя есть интернет?", "label": "trap"}
+{"text": "Посоветуй, как наладить учёба", "label": "advice"}
+{"text": "Стоит ли заниматься музыка?", "label": "opinion"}
+{"text": "Объясни, почему кофе", "label": "explain"}
+{"text": "Сколько будет 61% от 648?", "label": "math"}
+{"text": "Почему коты мурчат?", "label": "explain"}
+{"text": "На чём ездить по Астане?", "label": "advice"}
+{"text": "Сколько будет 33% от 245?", "label": "math"}
+{"text": "Почему мы зеваем?", "label": "explain"}
+{"text": "Сколько будет 83+35?", "label": "math"}
+{"text": "Ты умный?", "label": "trap"}
+{"text": "Что делаешь на выходных?", "label": "smalltalk"}
+{"text": "Сколько букв в привет?", "label": "math"}
+{"text": "Отчего бывает дым?", "label": "explain"}
+{"text": "Отчего бывает иней?", "label": "explain"}
+{"text": "Нечего делать", "label": "smalltalk"}
+{"text": "Ты из ChatGPT?", "label": "trap"}
+{"text": "Поссорился с девушкой что делать?", "label": "advice"}
+{"text": "Я не понимаю математику", "label": "support"}
+{"text": "Как поговорить с девушка?", "label": "social"}
+{"text": "Сколько будет 51% от 234?", "label": "math"}
+{"text": "Почему луна?", "label": "explain"}
+{"text": "Сейчас 2026?", "label": "trap"}
+{"text": "Что посмотреть в Парижа?", "label": "fact"}
+{"text": "Что за музыка у тебя?", "label": "smalltalk"}
+{"text": "Что сказать на комплимент?", "label": "advice"}
+{"text": "Сколько будет 77% от 341?", "label": "math"}
+{"text": "Сколько будет 82% от 386?", "label": "math"}
+{"text": "Что лучше айфон или андроид?", "label": "opinion"}
+{"text": "Паника перед экзаменом", "label": "support"}
+{"text": "Родители обиделся, что делать?", "label": "social"}
+{"text": "Сколько будет 68% от 814?", "label": "math"}
+{"text": "Какой город столица Казахстана?", "label": "fact"}
+{"text": "Сколько будет 72+80?", "label": "math"}
+{"text": "Сосед обиделся, что делать?", "label": "social"}
+{"text": "Сколько будет 57 умножить на 18?", "label": "math"}
+{"text": "Не знаю как реагировать на комплименты", "label": "advice"}
+{"text": "Докажи, что ты человек", "label": "trap"}
+{"text": "Что ты сегодня ел?", "label": "trap"}
+{"text": "Кто президент Франции?", "label": "fact"}
+{"text": "Я устал от всего", "label": "support"}
+{"text": "Как начать с еда?", "label": "advice"}
+{"text": "Как поговорить с брат?", "label": "social"}
+{"text": "Сколько будет 3+37?", "label": "math"}
+{"text": "Что думаешь про еда?", "label": "opinion"}
+{"text": "Где ты находишься?", "label": "trap"}
+{"text": "Что лучше: музыка или отдых?", "label": "opinion"}
+{"text": "Что делать, если не получается с еда?", "label": "advice"}
+{"text": "Откуда берутся сны?", "label": "explain"}
+{"text": "Объясни, почему лёд", "label": "explain"}
+{"text": "Смотришь аниме?", "label": "smalltalk"}
+{"text": "Я поссорился с друг", "label": "social"}
+{"text": "Объясни, почему тень", "label": "explain"}
+{"text": "Где находится Алматы?", "label": "fact"}
+{"text": "Как работает алгоритм?", "label": "explain"}
+{"text": "Куда сходить поесть в Астане?", "label": "advice"}
+{"text": "Что делать, если я не понял?", "label": "support"}
+{"text": "Как работает код?", "label": "explain"}
 {"text": "Почему град?", "label": "explain"}
-{"text": "Что нового?", "label": "smalltalk"}
-{"text": "Где находится Парижа?", "label": "fact"}
+{"text": "Чувствую себя одиноко", "label": "support"}
+{"text": "Как начать с зима?", "label": "advice"}
+{"text": "Отчего бывает пар?", "label": "explain"}
+{"text": "Отчего бывает роса?", "label": "explain"}
+{"text": "Отключи интернет", "label": "trap"}
+{"text": "Что слушаешь?", "label": "smalltalk"}
+{"text": "Что делать, если сломался телефон?", "label": "everyday"}
+{"text": "Почему кот мурлычет?", "label": "explain"}
+{"text": "Отчего бывает зевота?", "label": "explain"}
+{"text": "Объясни нейросеть простыми словами", "label": "explain"}
+{"text": "Родители меня не понимает", "label": "social"}
+{"text": "Выключи интернет", "label": "trap"}
+{"text": "Холодно сегодня?", "label": "smalltalk"}
+{"text": "Как отмечают Наурыз?", "label": "explain"}
+{"text": "Как ухаживать за уборка?", "label": "everyday"}
+{"text": "Как самолёт держится в воздухе?", "label": "explain"}
+{"text": "Не могу заснуть", "label": "advice"}
+{"text": "Объясни блокчейн простыми словами", "label": "explain"}
+{"text": "Что посмотреть в Токио?", "label": "fact"}
+{"text": "Посоветуй, как наладить спорт", "label": "advice"}
+{"text": "Как правильно извиниться?", "label": "advice"}
+{"text": "Что приготовить быстро?", "label": "advice"}
+{"text": "Почему хочется зевать?", "label": "explain"}
+{"text": "Батарея садится на морозе", "label": "explain"}
+{"text": "Что посмотреть в Лондона?", "label": "fact"}
+{"text": "Сколько будет 89+79?", "label": "math"}
+{"text": "Холодильник плохо закрывается", "label": "advice"}
+{"text": "Что лучше: Астана или отдых?", "label": "opinion"}
+{"text": "Отчего бывает снег?", "label": "explain"}
+{"text": "Что такое процессор?", "label": "explain"}
+{"text": "Сколько будет 15% от 200?", "label": "math"}
+{"text": "Я не понял", "label": "support"}
+{"text": "Стоит ли заниматься учёба?", "label": "opinion"}
+{"text": "Объясни квант простыми словами", "label": "explain"}
+{"text": "Как работает витамин?", "label": "explain"}
+{"text": "2 4 8 16 продолжи", "label": "math"}
+{"text": "Как начать с музыка?", "label": "advice"}
+{"text": "Расскажи про Наурыз", "label": "explain"}
+{"text": "Ты откуда?", "label": "trap"}
+{"text": "Почему звёзды?", "label": "explain"}
+{"text": "Что такое электричество?", "label": "explain"}
+{"text": "Родители меня не понимают", "label": "advice"}
+{"text": "Что такое сайт?", "label": "explain"}
+{"text": "Где находится Москвы?", "label": "fact"}
+{"text": "Нет сил вообще", "label": "support"}
+{"text": "Как передвигаться по Астане?", "label": "advice"}
+{"text": "Почему дым?", "label": "explain"}
+{"text": "Я поссорился с брат", "label": "social"}
+{"text": "Почему море?", "label": "explain"}
+{"text": "Сколько будет 84+95?", "label": "math"}
+{"text": "Стоит ли заниматься дорога?", "label": "opinion"}
+{"text": "Что такое AITU?", "label": "fact"}
+{"text": "Поссорился с другом, что делать?", "label": "advice"}
+{"text": "Сколько будет 25 умножить на 85?", "label": "math"}
+{"text": "Какая у тебя модель?", "label": "trap"}
+{"text": "Как поговорить с парень?", "label": "social"}
+{"text": "Что-нибудь умное", "label": "smalltalk"}
+{"text": "Стоит ли заниматься деньги?", "label": "opinion"}
+{"text": "Объясни, почему пар", "label": "explain"}
+{"text": "Что думаешь про кино?", "label": "opinion"}
+{"text": "Не могу сделать домашку", "label": "support"}
+{"text": "Почему от лука плачут?", "label": "explain"}
+{"text": "Почему лук вызывает слёзы?", "label": "explain"}
 {"text": "Как ты?", "label": "smalltalk"}
+{"text": "Стоит ли идти в IT?", "label": "opinion"}
+{"text": "Как ты сдал ЕНТ?", "label": "fact"}
+{"text": "Назови президента Казахстана", "label": "fact"}
+{"text": "Мама обиделся, что делать?", "label": "social"}
+{"text": "Объясни, почему эхо", "label": "explain"}
+{"text": "Что нового?", "label": "smalltalk"}
+{"text": "Ты ChatGPT?", "label": "trap"}
+{"text": "Отчего бывает море?", "label": "explain"}
+{"text": "Что нового у тебя?", "label": "smalltalk"}
+{"text": "Сколько будет 56 умножить на 87?", "label": "math"}
+{"text": "Неловкая пауза в разговоре", "label": "advice"}
+{"text": "Расскажи про любовь", "label": "opinion"}
+{"text": "Подскажи, что делать с деньги", "label": "advice"}
+{"text": "Помоги с домашкой", "label": "support"}
+{"text": "Сестра меня не понимает", "label": "social"}
+{"text": "Где находится Токио?", "label": "fact"}
+{"text": "Что делать, если я устал?", "label": "support"}
+{"text": "Сестра обиделся, что делать?", "label": "social"}
+{"text": "Что думаешь про спорт?", "label": "opinion"}
+{"text": "Какая столица Японии?", "label": "fact"}
+{"text": "Что у тебя был на завтрак?", "label": "trap"}
+{"text": "Расскажи историю", "label": "smalltalk"}
+{"text": "Объясни, почему дым", "label": "explain"}
+{"text": "Отчего бывает листья?", "label": "explain"}
+{"text": "Сколько будет 20 умножить на 12?", "label": "math"}
+{"text": "Что лучше: сон или отдых?", "label": "opinion"}
+{"text": "У тебя есть API?", "label": "trap"}
+{"text": "Почему луна меняет форму?", "label": "explain"}
+{"text": "Сколько будет 11+70?", "label": "math"}
+{"text": "Почему трава зелёная?", "label": "explain"}
+{"text": "Что думаешь про лето?", "label": "opinion"}
+{"text": "Играешь в игры?", "label": "smalltalk"}
+{"text": "Мне плохо, я не понял", "label": "support"}
+{"text": "С кем ты живёшь?", "label": "fact"}
+{"text": "Отчего бывает радуга?", "label": "explain"}
+{"text": "Какая столица Китая?", "label": "fact"}
+{"text": "Как начать с работа?", "label": "advice"}
+{"text": "Посоветуй, как наладить готовка", "label": "advice"}
+{"text": "Папа обиделся, что делать?", "label": "social"}
+{"text": "Как работает интернет?", "label": "explain"}
+{"text": "Как начать с магазин?", "label": "advice"}
+{"text": "Объясни приложение простыми словами", "label": "explain"}
+{"text": "ИИ заменит людей?", "label": "opinion"}
+{"text": "Почему эхо?", "label": "explain"}
 {"text": "Что поесть в Астане?", "label": "advice"}
 {"text": "Как отказать, чтобы не обидеть?", "label": "advice"}
-{"text": "Где находится Токио?", "label": "fact"}
-{"text": "Кот не ест, что делать?", "label": "advice"}
-{"text": "Где находится Москвы?", "label": "fact"}
-{"text": "Подскажи, что делать с готовка", "label": "advice"}
-{"text": "Что приготовить быстро?", "label": "advice"}
-{"text": "Стоит ли заниматься зима?", "label": "opinion"}
-{"text": "ИИ заменит людей?", "label": "opinion"}
-{"text": "Посоветуй, как наладить учёба", "label": "advice"}
-{"text": "Как начать с музыка?", "label": "advice"}
-{"text": "Почему огонь?", "label": "explain"}
-{"text": "Кто тебя сделал?", "label": "trap"}
-{"text": "Сколько будет 46 умножить на 78?", "label": "math"}
-{"text": "Объясни блокчейн простыми словами", "label": "explain"}
-{"text": "Почему идёт снег?", "label": "explain"}
 {"text": "Расскажи про AITU", "label": "fact"}
+{"text": "Почему по льду скользко?", "label": "explain"}
+{"text": "Я поссорился с девушкой", "label": "advice"}
+{"text": "Объясни аккумулятор простыми словами", "label": "explain"}
+{"text": "Как работает гравитация?", "label": "explain"}
+{"text": "На кого учишься?", "label": "fact"}
+{"text": "Как работает холодильник?", "label": "explain"}
+{"text": "Сколько будет 97+57?", "label": "math"}
+{"text": "Как начать с кино?", "label": "advice"}
+{"text": "Сколько будет 19+34?", "label": "math"}
+{"text": "Кто тебя сделал?", "label": "trap"}
+{"text": "Любишь аниме?", "label": "smalltalk"}
+{"text": "iPhone или Android?", "label": "opinion"}
+{"text": "Объясни, почему гром", "label": "explain"}
+{"text": "Почему идёт снег?", "label": "explain"}
+{"text": "Ты из Казахстана?", "label": "fact"}
 {"text": "Чем отличается левый берег от правого в Астане?", "label": "explain"}
 {"text": "Какой у тебя интерфейс?", "label": "trap"}
-{"text": "Сколько будет 77% от 341?", "label": "math"}
-{"text": "Я не понимаю математику", "label": "support"}
-{"text": "Назови президента Казахстана", "label": "fact"}
-{"text": "Что такое алгоритм?", "label": "explain"}
-{"text": "Как начать с еда?", "label": "advice"}
-{"text": "Смотрела футбол?", "label": "smalltalk"}
-{"text": "Как начать с спорт?", "label": "advice"}
-{"text": "Что посмотреть в Лондона?", "label": "fact"}
-{"text": "Что думаешь про магазин?", "label": "opinion"}
-{"text": "Что делать, если не получается с сон?", "label": "advice"}
+{"text": "Мне скучно", "label": "smalltalk"}
+{"text": "Ты не человек?", "label": "trap"}
+{"text": "Ты в школе учишься?", "label": "fact"}
+{"text": "Что думаешь про алматы?", "label": "opinion"}
+{"text": "Подскажи, что делать с спорт", "label": "advice"}
+{"text": "Отчего бывает молния?", "label": "explain"}
+{"text": "Стоит ли заниматься готовка?", "label": "opinion"}
+{"text": "Посоветуй, как наладить сон", "label": "advice"}
+{"text": "Кот не ест, что делать?", "label": "advice"}
+{"text": "Что такое квант?", "label": "explain"}
+{"text": "Что думаешь про готовка?", "label": "opinion"}
+{"text": "Посоветуй фильм", "label": "advice"}
+{"text": "Я поссорился с парень", "label": "social"}
 {"text": "Смотрел футбол?", "label": "smalltalk"}
-{"text": "Что такое вакцина?", "label": "explain"}
-{"text": "Что делать, если я обидел?", "label": "support"}
-{"text": "Я не понял", "label": "support"}
-{"text": "Расскажи про любовь", "label": "opinion"}
-{"text": "Объясни, почему соль", "label": "explain"}
+{"text": "Как работает вакцина?", "label": "explain"}
+{"text": "Как учёба?", "label": "smalltalk"}
+{"text": "Где находится Парижа?", "label": "fact"}
+{"text": "Кто у нас президент?", "label": "fact"}
+{"text": "Объясни, почему молния", "label": "explain"}
+{"text": "Друг меня не понимает", "label": "social"}
+{"text": "Брат обиделся, что делать?", "label": "social"}
+{"text": "Твоё мнение об ИИ", "label": "opinion"}
 {"text": "Как получается снег?", "label": "explain"}
-{"text": "Стоит ли идти в IT?", "label": "opinion"}
-{"text": "Я поссорился с сосед", "label": "social"}
-{"text": "Сколько будет 59% от 144?", "label": "math"}
-{"text": "Что лучше: сон или отдых?", "label": "opinion"}
-{"text": "Как работает телефон?", "label": "explain"}
-{"text": "Родители обиделся, что делать?", "label": "social"}
+{"text": "Какая погода?", "label": "smalltalk"}
+{"text": "Стоит ли заниматься работа?", "label": "opinion"}
+{"text": "Что лучше: зима или отдых?", "label": "opinion"}
+{"text": "Как работает квант?", "label": "explain"}
+{"text": "Почему выбрал IT?", "label": "opinion"}
+{"text": "На улице холодно?", "label": "smalltalk"}
+{"text": "Сколько будет 90 умножить на 59?", "label": "math"}
 {"text": "Тебе сколько?", "label": "trap"}
 {"text": "Зачем кошки мурлыкают?", "label": "explain"}
-{"text": "Сколько будет 72+80?", "label": "math"}
-{"text": "Как ухаживать за уборка?", "label": "everyday"}
-{"text": "Ты умный?", "label": "trap"}
+{"text": "Подскажи, что делать с готовка", "label": "advice"}
+{"text": "Сколько будет 64% от 499?", "label": "math"}
+{"text": "Что делать, если не получается с лето?", "label": "advice"}
+{"text": "Что с погодой?", "label": "smalltalk"}
 {"text": "Мы поссорились с другом", "label": "advice"}
 {"text": "Что подарить другу на день рождения?", "label": "advice"}
 {"text": "Идти ли в айти?", "label": "opinion"}
 {"text": "Идеи подарка другу", "label": "advice"}
-{"text": "Подскажи, что делать с деньги", "label": "advice"}
-{"text": "Нет времени готовить", "label": "advice"}
-{"text": "Мне плохо, я устал", "label": "support"}
-{"text": "Что посмотреть в Алматы?", "label": "fact"}
-{"text": "Объясни, почему солнце", "label": "explain"}
-{"text": "Сколько будет 83 умножить на 42?", "label": "math"}
-{"text": "Сколько букв в слове математика?", "label": "math"}
-{"text": "Какой у тебя возраст?", "label": "trap"}
-{"text": "Подскажи, что делать с дорога", "label": "advice"}
-{"text": "Стоит ли заниматься еда?", "label": "opinion"}
-{"text": "Отчего бывает иней?", "label": "explain"}
-{"text": "Сколько будет 29% от 818?", "label": "math"}
-{"text": "Отчего бывает роса?", "label": "explain"}
-{"text": "Объясни, почему ветер", "label": "explain"}
+{"text": "Сколько будет 35 умножить на 59?", "label": "math"}
 {"text": "Айфон или андроид?", "label": "opinion"}
-{"text": "Девушка обиделся, что делать?", "label": "social"}
-{"text": "Почему лёд?", "label": "explain"}
-{"text": "Сколько будет 39 умножить на 5?", "label": "math"}
-{"text": "Какой город столица Казахстана?", "label": "fact"}
-{"text": "Объясни, почему иней", "label": "explain"}
+{"text": "Что делать, если я поссорился?", "label": "support"}
+{"text": "Что думаешь про дорога?", "label": "opinion"}
+{"text": "Как поговорить с папа?", "label": "social"}
+{"text": "Брат меня не понимает", "label": "social"}
+{"text": "Подскажи, что делать с дорога", "label": "advice"}
+{"text": "Что думаешь про деньги?", "label": "opinion"}
+{"text": "Какой у тебя возраст?", "label": "trap"}
+{"text": "Отчего бывает огонь?", "label": "explain"}
+{"text": "Стоит ли заниматься еда?", "label": "opinion"}
 {"text": "Почему иней?", "label": "explain"}
-{"text": "Любишь аниме?", "label": "smalltalk"}
-{"text": "Почему от лука плачут?", "label": "explain"}
-{"text": "Отчего бывает снег?", "label": "explain"}
-{"text": "Что такое AITU?", "label": "fact"}
-{"text": "Сколько будет 64 умножить на 98?", "label": "math"}
-{"text": "Сколько будет 20+30?", "label": "math"}
-{"text": "Объясни код простыми словами", "label": "explain"}
-{"text": "Не знаю как реагировать на комплименты", "label": "advice"}
-{"text": "Родители меня не понимают", "label": "advice"}
-{"text": "Где находится Астаны?", "label": "fact"}
-{"text": "Подскажи, что делать с учёба", "label": "advice"}
-{"text": "Ты не человек?", "label": "trap"}
-{"text": "Какая сегодня погода?", "label": "smalltalk"}
-{"text": "Что делать, если не получается с зима?", "label": "advice"}
-{"text": "Почему лук вызывает слёзы?", "label": "explain"}
-{"text": "Объясни, почему молния", "label": "explain"}
-{"text": "Сколько будет 97 умножить на 19?", "label": "math"}
-{"text": "Пошути", "label": "smalltalk"}
-{"text": "Я поссорился с родители", "label": "social"}
-{"text": "Как начать с зима?", "label": "advice"}
-{"text": "Почему после дождя появляется радуга? Объясни простыми словами.", "label": "explain"}
-{"text": "Как работает аккумулятор?", "label": "explain"}
-{"text": "Откуда берутся сны?", "label": "explain"}
-{"text": "На улице холодно?", "label": "smalltalk"}
-{"text": "Сколько будет 29+97?", "label": "math"}
-{"text": "Почему гремит гром?", "label": "explain"}
-{"text": "Что лучше: кино или отдых?", "label": "opinion"}
-{"text": "Где ты живёшь?", "label": "trap"}
+{"text": "Что делать, если сломался готовка?", "label": "everyday"}
+{"text": "Не хватает денег что делать?", "label": "advice"}
+{"text": "Парень обиделся, что делать?", "label": "social"}
+{"text": "Что такое аккумулятор?", "label": "explain"}
+{"text": "Как помириться с другом после ссоры?", "label": "advice"}
+{"text": "Отчего бывает самолёт?", "label": "explain"}
+{"text": "Что такое алгоритм?", "label": "explain"}
+{"text": "Куда сходить в Астане?", "label": "advice"}
+{"text": "Я устал", "label": "support"}
+{"text": "Почему ветер?", "label": "explain"}
+{"text": "Что делать, если сломался кот?", "label": "everyday"}
+{"text": "Смотрела футбол?", "label": "smalltalk"}
+{"text": "Объясни интернет простыми словами", "label": "explain"}
+{"text": "Почему после молнии гром?", "label": "explain"}
+{"text": "Объясни, почему море", "label": "explain"}
+{"text": "Что думаешь про сон?", "label": "opinion"}
+{"text": "Друг извинился за опоздание", "label": "social"}
+{"text": "Что такое атом?", "label": "explain"}
+{"text": "Как начать с спорт?", "label": "advice"}
 {"text": "Что такое любовь?", "label": "opinion"}
-{"text": "Объясни, почему кофе", "label": "explain"}
-{"text": "Сколько будет 68% от 814?", "label": "math"}
-{"text": "Что думаешь про готовка?", "label": "opinion"}
-{"text": "Объясни, почему огонь", "label": "explain"}
-{"text": "Как ухаживать за готовка?", "label": "everyday"}
+{"text": "Сколько будет 78% от 602?", "label": "math"}
+{"text": "Почему после дождя появляется радуга? Объясни простыми словами.", "label": "explain"}
+{"text": "Как пережить -30 в Астане?", "label": "advice"}
 {"text": "Я поссорился с одногруппник", "label": "social"}
-{"text": "Мне плохо, я не понял", "label": "support"}
+{"text": "Почему гремит гром?", "label": "explain"}
+{"text": "Сколько будет 83 умножить на 42?", "label": "math"}
+{"text": "Где ты живёшь?", "label": "trap"}
+{"text": "Что изучаешь в универе?", "label": "fact"}
+{"text": "Сколько будет 64 умножить на 98?", "label": "math"}
+{"text": "Сколько будет 5% от 836?", "label": "math"}
+{"text": "Объясни, почему град", "label": "explain"}
+{"text": "Сколько будет 25+85?", "label": "math"}
+{"text": "Как ухаживать за стирка?", "label": "everyday"}
+{"text": "Приветствую", "label": "greeting"}
+{"text": "Сдавал ЕНТ?", "label": "fact"}
 {"text": "Какая ты модель?", "label": "trap"}
-{"text": "Сколько будет 56 умножить на 87?", "label": "math"}
-{"text": "Где находится Лондона?", "label": "fact"}
-{"text": "Стоит ли заниматься магазин?", "label": "opinion"}
+{"text": "Отчего бывает солнце?", "label": "explain"}
+{"text": "Сколько будет 37% от 480?", "label": "math"}
+{"text": "Отчего бывает небо?", "label": "explain"}
+{"text": "Как работает атом?", "label": "explain"}
 {"text": "Почему луна бывает разной?", "label": "explain"}
-{"text": "Объясни атом простыми словами", "label": "explain"}
+{"text": "Сколько будет 83 умножить на 35?", "label": "math"}
 {"text": "Кошка не ест", "label": "advice"}
 {"text": "Расскажи анекдот", "label": "smalltalk"}
-{"text": "Сколько будет 75% от 341?", "label": "math"}
-{"text": "Объясни процессор простыми словами", "label": "explain"}
-{"text": "Почему тень?", "label": "explain"}
-{"text": "Что такое приложение?", "label": "explain"}
+{"text": "Сколько будет 19 умножить на 34?", "label": "math"}
+{"text": "Сколько будет 14% от 540?", "label": "math"}
+{"text": "Объясни, почему небо", "label": "explain"}
+{"text": "Что делать, если не получается с учёба?", "label": "advice"}
 {"text": "Как отреагировать если друг опоздал?", "label": "social"}
 {"text": "У тебя десять пальцев?", "label": "trap"}
 {"text": "Как добраться в Астане?", "label": "advice"}
 {"text": "Отчего луна то круглая то серп?", "label": "explain"}
 {"text": "Как ответить на комплимент?", "label": "advice"}
-{"text": "Какая столица Японии?", "label": "fact"}
+{"text": "Какая столица Франции?", "label": "fact"}
 {"text": "Первый раз приехал в Астану зимой", "label": "advice"}
-{"text": "Сколько будет 35+59?", "label": "math"}
+{"text": "Объясни, почему листья", "label": "explain"}
 {"text": "Почему пар?", "label": "explain"}
-{"text": "Почему небо?", "label": "explain"}
-{"text": "Сестра меня не понимает", "label": "social"}
-{"text": "Отчего бывает зевота?", "label": "explain"}
+{"text": "Мне плохо, я поссорился", "label": "support"}
+{"text": "Почему холодильник не закрывается?", "label": "advice"}
+{"text": "Почему огонь?", "label": "explain"}
+{"text": "Посоветуй, как наладить деньги", "label": "advice"}
 {"text": "Твоё имя?", "label": "trap"}
 {"text": "Что ты ел на завтрак?", "label": "trap"}
 {"text": "Какой у тебя API?", "label": "trap"}
-{"text": "Сколько будет 47 умножить на 31?", "label": "math"}
+{"text": "Папа меня не понимает", "label": "social"}
 {"text": "Дверца холодильника не держит", "label": "advice"}
 {"text": "15 процентов от 200", "label": "math"}
-{"text": "Как работает код?", "label": "explain"}
-{"text": "Сколько будет 82% от 386?", "label": "math"}
-{"text": "Боюсь экзамена", "label": "support"}
-{"text": "Сколько будет 57+18?", "label": "math"}
-{"text": "Одногруппник обиделся, что делать?", "label": "social"}
 {"text": "Как работает сайт?", "label": "explain"}
+{"text": "Сколько будет 71% от 464?", "label": "math"}
+{"text": "Боюсь экзамена", "label": "support"}
+{"text": "Сколько будет 97 умножить на 19?", "label": "math"}
+{"text": "Стоит ли заниматься сон?", "label": "opinion"}
+{"text": "Как работает приложение?", "label": "explain"}
+{"text": "Я поссорился с папа", "label": "social"}
 {"text": "Какие планы на выходные?", "label": "smalltalk"}
-{"text": "Что делать, если сломался холодильник?", "label": "everyday"}
-{"text": "Сосед меня не понимает", "label": "social"}
-{"text": "Родители меня не понимает", "label": "social"}
-{"text": "Я поссорился с брат", "label": "social"}
-{"text": "Подскажи, что делать с спорт", "label": "advice"}
-{"text": "Посоветуй, как наладить музыка", "label": "advice"}
-{"text": "Как поговорить с родители?", "label": "social"}
-{"text": "Что делать, если не получается с учёба?", "label": "advice"}
-{"text": "Отчего бывает радуга?", "label": "explain"}
-{"text": "Сколько будет 85 умножить на 17?", "label": "math"}
-{"text": "Сколько будет 25 умножить на 85?", "label": "math"}
-{"text": "Как работает атом?", "label": "explain"}
+{"text": "Посоветуй, как наладить еда", "label": "advice"}
+{"text": "Почему кофе?", "label": "explain"}
+{"text": "Стоит ли заниматься магазин?", "label": "opinion"}
+{"text": "Объясни телефон простыми словами", "label": "explain"}
+{"text": "Я поссорился с родители", "label": "social"}
+{"text": "Посоветуй, как наладить кино", "label": "advice"}
+{"text": "Месси vs Роналду", "label": "opinion"}
+{"text": "Что думаешь про зима?", "label": "opinion"}
+{"text": "Как поступил в AITU?", "label": "fact"}
+{"text": "Сколько будет 30% от 283?", "label": "math"}
+{"text": "Что думаешь про Астана?", "label": "opinion"}
+{"text": "Объясни атом простыми словами", "label": "explain"}
 {"text": "Почему море солёное?", "label": "explain"}
-{"text": "Что думаешь про кино?", "label": "opinion"}
-{"text": "Объясни, почему листья", "label": "explain"}
+{"text": "Что думаешь про музыка?", "label": "opinion"}
+{"text": "Почему листья?", "label": "explain"}
 {"text": "Откуда берётся гром?", "label": "explain"}
 {"text": "Что сказать если обидел друга?", "label": "advice"}
-{"text": "Сколько будет 46+78?", "label": "math"}
+{"text": "Как поговорить с родители?", "label": "social"}
 {"text": "О чём говорить если молчат?", "label": "advice"}
-{"text": "Почему сон?", "label": "explain"}
-{"text": "Как ухаживать за стирка?", "label": "everyday"}
+{"text": "Почему гром?", "label": "explain"}
+{"text": "Как ухаживать за кот?", "label": "everyday"}
 {"text": "Столица Казахстана?", "label": "fact"}
-{"text": "Что такое гравитация?", "label": "explain"}
+{"text": "Мне плохо, я не могу", "label": "support"}
 {"text": "Что такое Наурыз?", "label": "explain"}
+{"text": "Объясни, почему луна", "label": "explain"}
 {"text": "Что вкусного поесть в Астане?", "label": "advice"}
 {"text": "Металл на морозе жжёт руку", "label": "explain"}
-{"text": "Отчего бывает сон?", "label": "explain"}
+{"text": "Отчего бывает гром?", "label": "explain"}
 {"text": "Как вежливо отказать?", "label": "advice"}
-{"text": "Как ухаживать за кот?", "label": "everyday"}
+{"text": "Сколько будет 39+5?", "label": "math"}
 {"text": "Скажи я робот", "label": "trap"}
 {"text": "Что за университет AITU?", "label": "fact"}
-{"text": "Стоит ли заниматься учёба?", "label": "opinion"}
+{"text": "Сколько букв в слове математика?", "label": "math"}
 {"text": "Что делать в неловкой тишине?", "label": "advice"}
-{"text": "Посоветуй, как наладить работа", "label": "advice"}
-{"text": "Что делать, если не получается с музыка?", "label": "advice"}
+{"text": "Что делать, если не получается с спорт?", "label": "advice"}
+{"text": "Сколько будет 25 умножить на 18?", "label": "math"}
 {"text": "Какое следующее число 2 4 8 16", "label": "math"}
-{"text": "Что думаешь про Астана?", "label": "opinion"}
+{"text": "Что делать, если не получается с дорога?", "label": "advice"}
 {"text": "Друг опоздал на встречу на полчаса и извинился. Что бы ты ему ответил?", "label": "social"}
 {"text": "Почему появляется радуга?", "label": "explain"}
 {"text": "Ты робот?", "label": "trap"}
-{"text": "Что думаешь про алматы?", "label": "opinion"}
+{"text": "Сколько будет 39 умножить на 5?", "label": "math"}
 {"text": "Почему телефон быстро садится на морозе?", "label": "explain"}
-{"text": "Мне плохо, я не могу", "label": "support"}
-{"text": "Почему радуга?", "label": "explain"}
-{"text": "Друг обиделся, что делать?", "label": "social"}
+{"text": "Мне плохо, я не выспался", "label": "support"}
+{"text": "Как ты поступил в AITU?", "label": "fact"}
+{"text": "Девушка обиделся, что делать?", "label": "social"}
 {"text": "Зима или лето?", "label": "opinion"}
-{"text": "Сколько будет 20 умножить на 30?", "label": "math"}
+{"text": "Сколько будет 89 умножить на 89?", "label": "math"}
 {"text": "Почему в Астане пробки?", "label": "opinion"}
-{"text": "Брат меня не понимает", "label": "social"}
-{"text": "Мне плохо, я опоздал", "label": "support"}
-{"text": "Стоит ли заниматься сон?", "label": "opinion"}
-{"text": "Что лучше: Астана или отдых?", "label": "opinion"}
-{"text": "Сколько будет 51% от 234?", "label": "math"}
-{"text": "Как поговорить с папа?", "label": "social"}
-{"text": "Что думаешь про деньги?", "label": "opinion"}
+{"text": "Объясни, почему ветер", "label": "explain"}
+{"text": "Сколько будет 55% от 233?", "label": "math"}
+{"text": "Что лучше: готовка или отдых?", "label": "opinion"}
+{"text": "Стоит ли заниматься спорт?", "label": "opinion"}
+{"text": "Сколько будет 31+87?", "label": "math"}
+{"text": "Сколько будет 75% от 341?", "label": "math"}
+{"text": "Сколько будет 90+59?", "label": "math"}
+{"text": "Какой фильм посмотреть?", "label": "advice"}
 {"text": "Привет", "label": "greeting"}
-{"text": "Объясни, почему туман", "label": "explain"}
+{"text": "Объясни, почему сон", "label": "explain"}
 {"text": "Не умею отказывать", "label": "advice"}
 {"text": "Отчего в Астане ветер?", "label": "explain"}
-{"text": "Объясни, почему роса", "label": "explain"}
-{"text": "Сколько будет 71% от 464?", "label": "math"}
+{"text": "Объясни, почему самолёт", "label": "explain"}
+{"text": "Сколько будет 58 умножить на 88?", "label": "math"}
 {"text": "Как жизнь?", "label": "smalltalk"}
 {"text": "Как тебя зовут?", "label": "trap"}
 {"text": "Как работает блокчейн?", "label": "explain"}
 {"text": "Кот отказывается от еды", "label": "advice"}
-{"text": "Сколько будет 48+57?", "label": "math"}
+{"text": "Стоит ли заниматься Астана?", "label": "opinion"}
 {"text": "Что лучше зима или лето?", "label": "opinion"}
 {"text": "Как работает кофе?", "label": "explain"}
-{"text": "Сколько будет 5% от 836?", "label": "math"}
+{"text": "Объясни холодильник простыми словами", "label": "explain"}
 {"text": "Посоветуй книгу", "label": "advice"}
-{"text": "Что посмотреть в Парижа?", "label": "fact"}
-{"text": "Отчего бывает гром?", "label": "explain"}
-{"text": "В какие игры играешь?", "label": "smalltalk"}
+{"text": "Что делать, если не получается с кино?", "label": "advice"}
+{"text": "Какой курс?", "label": "fact"}
+{"text": "Мама меня не понимает", "label": "social"}
 {"text": "Какую музыку слушаешь?", "label": "smalltalk"}
-{"text": "Какая столица Франции?", "label": "fact"}
-{"text": "Сколько будет 84+95?", "label": "math"}
-{"text": "Объясни алгоритм простыми словами", "label": "explain"}
-{"text": "Как работает интернет?", "label": "explain"}
-{"text": "Почему соль?", "label": "explain"}
-{"text": "Сколько будет 39+5?", "label": "math"}
-{"text": "Отчего бывает кофе?", "label": "explain"}
+{"text": "Расскажи что-нибудь", "label": "smalltalk"}
+{"text": "Что лучше: лето или отдых?", "label": "opinion"}
+{"text": "Что думаешь про магазин?", "label": "opinion"}
+{"text": "Посоветуй, как наладить магазин", "label": "advice"}
+{"text": "Отчего бывает туман?", "label": "explain"}
+{"text": "Как тебе в универе?", "label": "smalltalk"}
+{"text": "Как ухаживать за готовка?", "label": "everyday"}
+{"text": "Отчего бывает лёд?", "label": "explain"}
 {"text": "Кто президент Казахстана?", "label": "fact"}
-{"text": "Посоветуй, как наладить зима", "label": "advice"}
-{"text": "Что делать, если я не могу?", "label": "support"}
-{"text": "Ты человек?", "label": "trap"}
-{"text": "Друг меня не понимает", "label": "social"}
-{"text": "Я опоздал", "label": "support"}
-{"text": "Подскажи, что делать с кино", "label": "advice"}
-{"text": "Что такое аккумулятор?", "label": "explain"}
-{"text": "Сколько букв в слове холодильник?", "label": "math"}
-{"text": "Я поругался", "label": "support"}
+{"text": "Посоветуй, как наладить лето", "label": "advice"}
+{"text": "Что лучше: кино или отдых?", "label": "opinion"}
+{"text": "Сколько будет 35+39?", "label": "math"}
+{"text": "Девушка меня не понимает", "label": "social"}
+{"text": "Подскажи, что делать с лето", "label": "advice"}
+{"text": "Друг обиделся, что делать?", "label": "social"}
+{"text": "Как работает аккумулятор?", "label": "explain"}
+{"text": "Сколько будет 59% от 144?", "label": "math"}
+{"text": "Что делать, если не получается с деньги?", "label": "advice"}
 {"text": "Что посоветуешь тому кто впервые в Астане зимой?", "label": "advice"}
-{"text": "Сколько будет 97 умножить на 57?", "label": "math"}
+{"text": "Сколько будет 3 умножить на 37?", "label": "math"}
 {"text": "Как твоё имя?", "label": "trap"}
-{"text": "Мне плохо, я поругался", "label": "support"}
+{"text": "Что делать, если я обидел?", "label": "support"}
 {"text": "Кто тебя создал?", "label": "trap"}
-{"text": "Сколько будет 72+74?", "label": "math"}
+{"text": "Какая столица России?", "label": "fact"}
 {"text": "Чё нового?", "label": "smalltalk"}
-{"text": "Посоветуй, как наладить готовка", "label": "advice"}
-{"text": "Подскажи, что делать с музыка", "label": "advice"}
+{"text": "Что делать, если не получается с магазин?", "label": "advice"}
+{"text": "Подскажи, что делать с кино", "label": "advice"}
+{"text": "Как работает электричество?", "label": "explain"}
 {"text": "Планы на уикенд?", "label": "smalltalk"}
+{"text": "Что такое белок?", "label": "explain"}
 {"text": "Что-нибудь расскажи", "label": "smalltalk"}
 {"text": "Друг опоздал на полчаса что сказать?", "label": "social"}
 {"text": "Ты смотришь аниме?", "label": "smalltalk"}
 {"text": "Как одеваться в январе в Астане?", "label": "advice"}
 {"text": "Отчего небо голубого цвета?", "label": "explain"}
-{"text": "Сколько будет 19+34?", "label": "math"}
+{"text": "Добрый день", "label": "smalltalk"}
 {"text": "Почему кофе бодрит?", "label": "explain"}
 {"text": "Ты какая модель?", "label": "trap"}
-{"text": "Сколько будет 11 умножить на 70?", "label": "math"}
-{"text": "Отчего бывает тень?", "label": "explain"}
+{"text": "Сколько будет 20 умножить на 30?", "label": "math"}
+{"text": "Отчего бывает вода?", "label": "explain"}
 {"text": "Объясни блокчейн", "label": "explain"}
 {"text": "Отчего вода в море солёная?", "label": "explain"}
-{"text": "Посоветуй, как наладить спорт", "label": "advice"}
-{"text": "Что делать, если я устал?", "label": "support"}
-{"text": "Отчего бывает эхо?", "label": "explain"}
+{"text": "Я поссорился с сосед", "label": "social"}
+{"text": "Я опоздал", "label": "support"}
+{"text": "Отчего бывает луна?", "label": "explain"}
 {"text": "Как настроение?", "label": "smalltalk"}
-{"text": "Как работает витамин?", "label": "explain"}
+{"text": "Объясни, почему огонь", "label": "explain"}
 {"text": "Как ухаживать за телефон?", "label": "everyday"}
-{"text": "Подскажи, что делать с лето", "label": "advice"}
-{"text": "Стоит ли заниматься алматы?", "label": "opinion"}
+{"text": "Посоветуй, как наладить музыка", "label": "advice"}
+{"text": "Кто президент Японии?", "label": "fact"}
 {"text": "Скажи что-нибудь умное", "label": "smalltalk"}
 {"text": "Где купить зимние вещи в Астане?", "label": "advice"}
 {"text": "Сколько букв в слове привет?", "label": "math"}
-{"text": "Стоит ли заниматься лето?", "label": "opinion"}
-{"text": "Сколько будет 20+12?", "label": "math"}
-{"text": "Объясни, почему море", "label": "explain"}
-{"text": "Что делать, если не получается с магазин?", "label": "advice"}
+{"text": "Стоит ли заниматься зима?", "label": "opinion"}
+{"text": "Сколько будет 20+30?", "label": "math"}
+{"text": "Ты из КЗ?", "label": "fact"}
+{"text": "Подскажи, что делать с магазин", "label": "advice"}
 {"text": "Скучно", "label": "smalltalk"}
-{"text": "Одногруппник меня не понимает", "label": "social"}
-{"text": "Сколько будет 56+87?", "label": "math"}
-{"text": "Объясни квант простыми словами", "label": "explain"}
+{"text": "Как доказать что ты человек?", "label": "trap"}
 {"text": "Сколько будет 64+98?", "label": "math"}
-{"text": "Я поссорился с друг", "label": "social"}
-{"text": "Объясни холодильник простыми словами", "label": "explain"}
+{"text": "Как поговорить с мама?", "label": "social"}
+{"text": "Как поговорить с одногруппник?", "label": "social"}
+{"text": "Я поссорился с девушка", "label": "social"}
+{"text": "Объясни, почему иней", "label": "explain"}
 {"text": "Почему океан солёный?", "label": "explain"}
-{"text": "Посоветуй, как наладить дорога", "label": "advice"}
+{"text": "Что делать, если не получается с зима?", "label": "advice"}
 {"text": "Друг опоздал и извинился", "label": "social"}
-{"text": "Объясни, почему самолёт", "label": "explain"}
-{"text": "Что делать, если не получается с спорт?", "label": "advice"}
-{"text": "Ты в интернете?", "label": "trap"}
+{"text": "Объясни, почему радуга", "label": "explain"}
+{"text": "Объясни гравитация простыми словами", "label": "explain"}
+{"text": "Что делать, если я забыл?", "label": "support"}
 {"text": "Как не замёрзнуть в Астане?", "label": "advice"}
-{"text": "Почему туман?", "label": "explain"}
-{"text": "Что делать, если не получается с еда?", "label": "advice"}
-{"text": "Сколько будет 83+42?", "label": "math"}
+{"text": "Почему сон?", "label": "explain"}
+{"text": "Объясни код простыми словами", "label": "explain"}
+{"text": "Что лучше: магазин или отдых?", "label": "opinion"}
 {"text": "Откуда берётся снег?", "label": "explain"}
 {"text": "Где купить шапку?", "label": "advice"}
 {"text": "Почему лёд скользкий?", "label": "explain"}
 {"text": "Как экономить деньги?", "label": "advice"}
-{"text": "Сколько будет 29 умножить на 97?", "label": "math"}
-{"text": "Объясни, почему вода", "label": "explain"}
-{"text": "Что лучше: музыка или отдых?", "label": "opinion"}
-{"text": "Отчего бывает огонь?", "label": "explain"}
-{"text": "Что лучше: магазин или отдых?", "label": "opinion"}
+{"text": "Сколько будет 84 умножить на 95?", "label": "math"}
+{"text": "Объясни, почему снег", "label": "explain"}
+{"text": "Как начать с деньги?", "label": "advice"}
+{"text": "Я поругался", "label": "support"}
+{"text": "Отчего бывает эхо?", "label": "explain"}
+{"text": "Мне плохо, я устал", "label": "support"}
 {"text": "Как летают самолёты?", "label": "explain"}
-{"text": "Как начать с работа?", "label": "advice"}
-{"text": "Объясни телефон простыми словами", "label": "explain"}
+{"text": "Что такое гравитация?", "label": "explain"}
+{"text": "Объясни, почему роса", "label": "explain"}
 {"text": "Мокрая ли вода?", "label": "explain"}
-{"text": "Отчего бывает небо?", "label": "explain"}
-{"text": "Сколько будет 61% от 648?", "label": "math"}
-{"text": "Посоветуй, как наладить лето", "label": "advice"}
-{"text": "Что делать, если не получается с дорога?", "label": "advice"}
-{"text": "Я не выспался", "label": "support"}
+{"text": "Ты местный?", "label": "fact"}
+{"text": "Сколько будет 29 умножить на 97?", "label": "math"}
+{"text": "Как начать с сон?", "label": "advice"}
+{"text": "Посоветуй, как наладить работа", "label": "advice"}
+{"text": "Мне плохо, я опоздал", "label": "support"}
 {"text": "Посчитай 15% от 200", "label": "math"}
 {"text": "Левый и правый берег — в чём разница?", "label": "explain"}
-{"text": "Отчего бывает лёд?", "label": "explain"}
+{"text": "Ты с родителями живёшь?", "label": "fact"}
 {"text": "Откуда берётся радуга после дождя?", "label": "explain"}
 {"text": "Что носить зимой в Астане?", "label": "advice"}
 {"text": "Почему в Астане холоднее чем показывает погода?", "label": "explain"}
-{"text": "Сколько будет 57 умножить на 18?", "label": "math"}
+{"text": "Сколько будет 11 умножить на 70?", "label": "math"}
 {"text": "Что почитать?", "label": "advice"}
-{"text": "Объясни приложение простыми словами", "label": "explain"}
+{"text": "Объясни белок простыми словами", "label": "explain"}
 {"text": "Помоги с домашним заданием", "label": "support"}
 {"text": "Зачем люди зевают?", "label": "explain"}
-{"text": "Как начать с лето?", "label": "advice"}
-{"text": "Объясни, почему небо", "label": "explain"}
-{"text": "Почему по льду скользко?", "label": "explain"}
-{"text": "Я устал от всего", "label": "support"}
-{"text": "Что делать, если не получается с работа?", "label": "advice"}
-{"text": "Сколько будет 25 умножить на 18?", "label": "math"}
-{"text": "Объясни, почему дым", "label": "explain"}
-{"text": "Какой фильм посмотреть?", "label": "advice"}
+{"text": "Подскажи, что делать с сон", "label": "advice"}
+{"text": "Ты из Астаны?", "label": "fact"}
+{"text": "Как поговорить с сестра?", "label": "social"}
+{"text": "В какие игры играешь?", "label": "smalltalk"}
+{"text": "Подскажи, что делать с зима", "label": "advice"}
+{"text": "Почему тень?", "label": "explain"}
+{"text": "Что будет с людьми из-за ИИ?", "label": "opinion"}
+{"text": "Как начать с готовка?", "label": "advice"}
+{"text": "Что делать, если не получается с готовка?", "label": "advice"}
+{"text": "Что лучше: деньги или отдых?", "label": "opinion"}
+{"text": "Что делать, если я поругался?", "label": "support"}
 {"text": "Как работает белок?", "label": "explain"}
-{"text": "Нет сил вообще", "label": "support"}
-{"text": "Расскажи историю", "label": "smalltalk"}
-{"text": "Я обидел", "label": "support"}
-{"text": "Что делать, если не получается с лето?", "label": "advice"}
-{"text": "Сколько будет 97+19?", "label": "math"}
-{"text": "Расскажи что-нибудь", "label": "smalltalk"}
-{"text": "Стоит ли заниматься дорога?", "label": "opinion"}
-{"text": "Сейчас 2026?", "label": "trap"}
-{"text": "Месси vs Роналду", "label": "opinion"}
-{"text": "Не могу сделать домашку", "label": "support"}
-{"text": "Как работает алгоритм?", "label": "explain"}
-{"text": "Объясни витамин простыми словами", "label": "explain"}
-{"text": "Подскажи, что делать с работа", "label": "advice"}
-{"text": "Как правильно извиниться?", "label": "advice"}
-{"text": "Почему холодильник не закрывается?", "label": "advice"}
-{"text": "Что посмотреть?", "label": "advice"}
-{"text": "Что делать, если не получается с деньги?", "label": "advice"}
-{"text": "Как поговорить с мама?", "label": "social"}
-{"text": "Кто президент Турции?", "label": "fact"}
-{"text": "Мама обиделся, что делать?", "label": "social"}
-{"text": "У тебя есть API?", "label": "trap"}
-{"text": "Как поговорить с девушка?", "label": "social"}
-{"text": "Как доказать что ты человек?", "label": "trap"}
-{"text": "Приветствую", "label": "greeting"}
+{"text": "Подскажи, что делать с музыка", "label": "advice"}
+{"text": "Сколько будет 83+42?", "label": "math"}
+{"text": "Объясни электричество простыми словами", "label": "explain"}
+{"text": "Что посмотреть в Астаны?", "label": "fact"}
+{"text": "Пошути", "label": "smalltalk"}
+{"text": "Какая сегодня погода?", "label": "smalltalk"}
+{"text": "Почему соль?", "label": "explain"}
 {"text": "Какая столица Казахстана?", "label": "fact"}
 {"text": "Вода мокрая почему?", "label": "explain"}
 {"text": "Почему самолёт не падает?", "label": "explain"}
-{"text": "Стоит ли заниматься музыка?", "label": "opinion"}
-{"text": "Что лучше: зима или отдых?", "label": "opinion"}
-{"text": "Сколько будет 33% от 245?", "label": "math"}
-{"text": "Сколько будет 89+79?", "label": "math"}
+{"text": "Стоит ли заниматься лето?", "label": "opinion"}
+{"text": "Что лучше: дорога или отдых?", "label": "opinion"}
+{"text": "Сколько будет 58+88?", "label": "math"}
+{"text": "Сколько будет 29+97?", "label": "math"}
 {"text": "Сколько 17 на 23?", "label": "math"}
 {"text": "Ты тупой?", "label": "trap"}
-{"text": "Сколько будет 58 умножить на 88?", "label": "math"}
-{"text": "Я поссорился с парень", "label": "social"}
-{"text": "Объясни вакцина простыми словами", "label": "explain"}
-{"text": "Что такое сайт?", "label": "explain"}
-{"text": "Сколько будет 85+17?", "label": "math"}
+{"text": "Сколько будет 72 умножить на 80?", "label": "math"}
+{"text": "Как начать с дорога?", "label": "advice"}
+{"text": "Что такое телефон?", "label": "explain"}
+{"text": "Что такое витамин?", "label": "explain"}
+{"text": "Сколько будет 48+57?", "label": "math"}
 {"text": "Мне грустно и одиноко", "label": "support"}
 {"text": "Ты программа?", "label": "trap"}
 {"text": "Почему телефон выключается на холоде?", "label": "explain"}
-{"text": "Сколько будет 48 умножить на 57?", "label": "math"}
+{"text": "Сколько будет 72 умножить на 74?", "label": "math"}
 {"text": "Продолжи: 2, 4, 8, 16...", "label": "math"}
-{"text": "Посоветуй, как наладить сон", "label": "advice"}
-{"text": "Объясни, почему град", "label": "explain"}
+{"text": "Как работает процессор?", "label": "explain"}
+{"text": "Объясни, почему соль", "label": "explain"}
 {"text": "Как поговорить с родителями?", "label": "advice"}
 {"text": "Что такое любовь простыми словами?", "label": "opinion"}
+{"text": "Одногруппник меня не понимает", "label": "social"}
 {"text": "Ты бот?", "label": "trap"}
 {"text": "Отчего лёд скользит?", "label": "explain"}
-{"text": "Что делать, если сломался телефон?", "label": "everyday"}
+{"text": "Что лучше: алматы или отдых?", "label": "opinion"}
 {"text": "Почему листья зелёные?", "label": "explain"}
-{"text": "Сколько будет 31+87?", "label": "math"}
-{"text": "Объясни нейросеть простыми словами", "label": "explain"}
-{"text": "Сколько будет 78% от 602?", "label": "math"}
+{"text": "Ты в интернете?", "label": "trap"}
+{"text": "Почему солнце?", "label": "explain"}
+{"text": "Сколько будет 63% от 368?", "label": "math"}
 {"text": "Что такое блокчейн?", "label": "explain"}
-{"text": "Объясни, почему снег", "label": "explain"}
+{"text": "Ты школьник или студент?", "label": "fact"}
+{"text": "Сколько будет 57+18?", "label": "math"}
 {"text": "Сколько будет 17 умножить на 23?", "label": "math"}
-{"text": "Почему луна?", "label": "explain"}
-{"text": "Что такое процессор?", "label": "explain"}
+{"text": "Почему пошёл в IT?", "label": "opinion"}
 {"text": "Что такое нейросеть?", "label": "explain"}
-{"text": "Сколько будет 89+89?", "label": "math"}
-{"text": "Кто президент России?", "label": "fact"}
+{"text": "Сколько будет 97+19?", "label": "math"}
+{"text": "Отчего бывает звёзды?", "label": "explain"}
+{"text": "Я обидел", "label": "support"}
+{"text": "Сколько будет 46 умножить на 78?", "label": "math"}
 {"text": "Кто тебя придумал?", "label": "trap"}
-{"text": "Сколько будет 83 умножить на 35?", "label": "math"}
+{"text": "Сколько будет 85 умножить на 17?", "label": "math"}
+{"text": "Я забыл", "label": "support"}
 {"text": "Что интересного есть в Астане?", "label": "advice"}
-{"text": "Объясни гравитация простыми словами", "label": "explain"}
+{"text": "Что такое интернет?", "label": "explain"}
 {"text": "Что думаешь про искусственный интеллект?", "label": "opinion"}
-{"text": "Как начать с магазин?", "label": "advice"}
-{"text": "Что посмотреть в Астаны?", "label": "fact"}
+{"text": "Подскажи, что делать с учёба", "label": "advice"}
+{"text": "Где находится Астаны?", "label": "fact"}
 {"text": "Математика сложная", "label": "support"}
-{"text": "Какая столица Китая?", "label": "fact"}
+{"text": "Какая столица США?", "label": "fact"}
 {"text": "Как одеться в Астане зимой?", "label": "advice"}
 {"text": "Что делать если не спится?", "label": "advice"}
 {"text": "Где купить шапку в Астане?", "label": "advice"}
-{"text": "Объясни, почему звёзды", "label": "explain"}
+{"text": "Объясни, почему зевота", "label": "explain"}
 {"text": "Что делать при -30?", "label": "advice"}
-{"text": "Как работает нейросеть?", "label": "explain"}
-{"text": "Я поссорился с папа", "label": "social"}
+{"text": "Объясни, почему звёзды", "label": "explain"}
+{"text": "Как начать с лето?", "label": "advice"}
 {"text": "Родители не понимают, что я хочу", "label": "advice"}
 {"text": "17*23", "label": "math"}
 {"text": "Расскажи шутку", "label": "smalltalk"}
-{"text": "Что лучше: готовка или отдых?", "label": "opinion"}
+{"text": "Какая столица Турции?", "label": "fact"}
 {"text": "Сколько у тебя пальцев?", "label": "trap"}
-{"text": "Сколько будет 11+70?", "label": "math"}
+{"text": "Мне плохо, я поругался", "label": "support"}
 {"text": "Хай", "label": "greeting"}
-{"text": "Почему вода?", "label": "explain"}
+{"text": "Почему снег?", "label": "explain"}
 {"text": "Что надеть в Астане в январе?", "label": "advice"}
 {"text": "Какой год?", "label": "trap"}
-{"text": "Что делать, если сломался готовка?", "label": "everyday"}
-{"text": "Сколько будет 89 умножить на 89?", "label": "math"}
-{"text": "Сколько будет 88% от 744?", "label": "math"}
+{"text": "Что делать, если сломался стирка?", "label": "everyday"}
+{"text": "Мне плохо, я обидел", "label": "support"}
+{"text": "Сколько будет 29% от 818?", "label": "math"}
 {"text": "Почему металл холоднее дерева?", "label": "explain"}
-{"text": "Подскажи, что делать с еда", "label": "advice"}
-{"text": "Подскажи, что делать с магазин", "label": "advice"}
-{"text": "Я поссорился с сестра", "label": "social"}
-{"text": "Что такое телефон?", "label": "explain"}
+{"text": "Объясни сайт простыми словами", "label": "explain"}
+{"text": "Что делать, если сломался уборка?", "label": "everyday"}
+{"text": "Сколько будет 35+59?", "label": "math"}
+{"text": "Что делать, если не получается с работа?", "label": "advice"}
+{"text": "Как поговорить с друг?", "label": "social"}
+{"text": "Почему роса?", "label": "explain"}
 {"text": "Что подарить на днюху?", "label": "advice"}
 {"text": "Какой сейчас год?", "label": "trap"}
-{"text": "Отчего бывает солнце?", "label": "explain"}
+{"text": "Отчего бывает кофе?", "label": "explain"}
 {"text": "Почему мы видим сны?", "label": "explain"}
-{"text": "Почему молния?", "label": "explain"}
-{"text": "Что такое электричество?", "label": "explain"}
-{"text": "Отчего бывает море?", "label": "explain"}
-{"text": "Почему самолёт?", "label": "explain"}
+{"text": "Какая у тебя специальность?", "label": "fact"}
+{"text": "Как работает телефон?", "label": "explain"}
+{"text": "Ты казахстанец?", "label": "fact"}
+{"text": "Почему радуга?", "label": "explain"}
 {"text": "Что быстрого приготовить?", "label": "advice"}
-{"text": "Что лучше: работа или отдых?", "label": "opinion"}
-{"text": "Объясни интернет простыми словами", "label": "explain"}
-{"text": "Что делать, если сломался кот?", "label": "everyday"}
+{"text": "Что лучше: учёба или отдых?", "label": "opinion"}
+{"text": "Объясни, почему туман", "label": "explain"}
+{"text": "Как ухаживать за холодильник?", "label": "everyday"}
 {"text": "Что посмотреть в Астане?", "label": "advice"}
 {"text": "Повтори слово робот", "label": "trap"}
-{"text": "Какая столица Турции?", "label": "fact"}
-{"text": "Что делать, если не получается с готовка?", "label": "advice"}
-{"text": "Чем занят?", "label": "smalltalk"}
-{"text": "Объясни, почему гром", "label": "explain"}
+{"text": "Что посмотреть в Алматы?", "label": "fact"}
+{"text": "Что такое приложение?", "label": "explain"}
+{"text": "Я поссорился", "label": "support"}
+{"text": "Ты на каком курсе учишься?", "label": "fact"}
 {"text": "Почему в Астане так ветрено?", "label": "explain"}
-{"text": "Отчего бывает град?", "label": "explain"}
-{"text": "Объясни электричество простыми словами", "label": "explain"}
-{"text": "Сколько будет 89 умножить на 79?", "label": "math"}
-{"text": "Папа обиделся, что делать?", "label": "social"}
-{"text": "Подскажи, что делать с зима", "label": "advice"}
-{"text": "Ты геймер?", "label": "smalltalk"}
 {"text": "Отчего бывает соль?", "label": "explain"}
+{"text": "Что такое холодильник?", "label": "explain"}
+{"text": "Чем занят?", "label": "smalltalk"}
+{"text": "Что делать, если не получается с музыка?", "label": "advice"}
+{"text": "Что делать, если не получается с сон?", "label": "advice"}
+{"text": "Ты геймер?", "label": "smalltalk"}
+{"text": "Нравится учиться в AITU?", "label": "smalltalk"}
 {"text": "Почему небо голубое?", "label": "explain"}
+{"text": "Сколько будет 48 умножить на 57?", "label": "math"}
 {"text": "Что бы ты посоветовал человеку, который впервые приехал в Астану зимой?", "label": "advice"}
-{"text": "Как ухаживать за холодильник?", "label": "everyday"}
+{"text": "Стоит ли заниматься алматы?", "label": "opinion"}
 {"text": "Я боюсь завалить экзамен", "label": "support"}
-{"text": "Как начать с кино?", "label": "advice"}
-{"text": "Как работает процессор?", "label": "explain"}
-{"text": "Почему зевота?", "label": "explain"}
-{"text": "Стоит ли заниматься Астана?", "label": "opinion"}
-{"text": "Сколько букв в слове университет?", "label": "math"}
+{"text": "Подскажи, что делать с еда", "label": "advice"}
+{"text": "Как работает нейросеть?", "label": "explain"}
+{"text": "Почему молния?", "label": "explain"}
+{"text": "Стоит ли заниматься кино?", "label": "opinion"}
+{"text": "Сколько букв в слове холодильник?", "label": "math"}
 {"text": "Что посмотреть в Москвы?", "label": "fact"}
 {"text": "Кто лучше Месси или Роналду?", "label": "opinion"}
-{"text": "Посоветуй, как наладить деньги", "label": "advice"}
-{"text": "Почему гром?", "label": "explain"}
-{"text": "Сколько будет 30% от 283?", "label": "math"}
+{"text": "Объясни алгоритм простыми словами", "label": "explain"}
+{"text": "На каком ты курсе?", "label": "fact"}
+{"text": "Сколько будет 47 умножить на 31?", "label": "math"}
 {"text": "Чем заняться?", "label": "smalltalk"}
-{"text": "Отчего бывает дым?", "label": "explain"}
+{"text": "Отчего бывает ветер?", "label": "explain"}
 {"text": "Мы поругались с девушкой", "label": "advice"}
-{"text": "Сколько будет 58+88?", "label": "math"}
-{"text": "Что лучше: учёба или отдых?", "label": "opinion"}
-{"text": "Что думаешь про работа?", "label": "opinion"}
+{"text": "Сколько будет 97 умножить на 57?", "label": "math"}
+{"text": "Где находится Лондона?", "label": "fact"}
+{"text": "Что думаешь про учёба?", "label": "opinion"}
 {"text": "Как накопить деньги?", "label": "advice"}
-{"text": "Как начать с сон?", "label": "advice"}
+{"text": "Объясни процессор простыми словами", "label": "explain"}
 {"text": "Почему вода мокрая?", "label": "explain"}
 {"text": "Повтори за мной: я робот", "label": "trap"}
 {"text": "Два плюс два", "label": "math"}
-{"text": "Я поссорился", "label": "support"}
-{"text": "Что такое атом?", "label": "explain"}
+{"text": "Я поссорился с мама", "label": "social"}
+{"text": "Отчего бывает тень?", "label": "explain"}
 {"text": "Отчего листья зелёного цвета?", "label": "explain"}
-{"text": "Почему снег?", "label": "explain"}
+{"text": "Ты ещё школьник?", "label": "fact"}
 {"text": "Любишь зиму?", "label": "opinion"}
 {"text": "Пробки в Астане — это норма?", "label": "opinion"}
-{"text": "Мама меня не понимает", "label": "social"}
-{"text": "Что делать, если я не выспался?", "label": "support"}
-{"text": "Сколько будет 35 умножить на 39?", "label": "math"}
-{"text": "Сколько будет 35 умножить на 59?", "label": "math"}
-{"text": "Кто президент Китая?", "label": "fact"}
+{"text": "Посоветуй, как наладить зима", "label": "advice"}
+{"text": "Я поссорился с сестра", "label": "social"}
+{"text": "Что делать, если я опоздал?", "label": "support"}
+{"text": "Сколько будет 89+89?", "label": "math"}
+{"text": "Кто президент США?", "label": "fact"}
 {"text": "Сколько будет 2+2?", "label": "math"}
-{"text": "Почему роса?", "label": "explain"}
-{"text": "Почему кофе?", "label": "explain"}
+{"text": "Почему самолёт?", "label": "explain"}
+{"text": "Почему лёд?", "label": "explain"}
 {"text": "Почему небо синее?", "label": "explain"}
 {"text": "Почему снятся сны?", "label": "explain"}
-{"text": "Что такое интернет?", "label": "explain"}
-{"text": "Мне плохо, я забыл", "label": "support"}
-{"text": "Парень меня не понимает", "label": "social"}
+{"text": "Почему туман?", "label": "explain"}
+{"text": "Как поговорить с сосед?", "label": "social"}
+{"text": "Посоветуй, как наладить дорога", "label": "advice"}
 {"text": "Как извиниться перед другом?", "label": "advice"}
-{"text": "Сколько будет 55% от 233?", "label": "math"}
-{"text": "Сколько будет 47+31?", "label": "math"}
+{"text": "Сколько будет 56+87?", "label": "math"}
+{"text": "Сколько будет 31 умножить на 87?", "label": "math"}
 {"text": "Ты глупый?", "label": "trap"}
-{"text": "Объясни, почему луна", "label": "explain"}
-{"text": "Объясни сайт простыми словами", "label": "explain"}
+{"text": "Почему программирование?", "label": "opinion"}
+{"text": "Объясни витамин простыми словами", "label": "explain"}
 {"text": "Ты GPT?", "label": "trap"}
-{"text": "Почему листья?", "label": "explain"}
+{"text": "Почему небо?", "label": "explain"}
 {"text": "Сколько у человека пальцев?", "label": "trap"}
 {"text": "Объясни про радугу", "label": "explain"}
-{"text": "Добрый день", "label": "smalltalk"}
+{"text": "Одногруппник обиделся, что делать?", "label": "social"}
 {"text": "Мне одиноко", "label": "support"}
-{"text": "Что лучше: лето или отдых?", "label": "opinion"}
-{"text": "Почему звёзды?", "label": "explain"}
-{"text": "Посоветуй, как наладить магазин", "label": "advice"}
-{"text": "Кто президент Франции?", "label": "fact"}
-{"text": "Сколько будет 25+18?", "label": "math"}
-{"text": "Сколько будет 3 умножить на 37?", "label": "math"}
-{"text": "Сколько будет 63% от 368?", "label": "math"}
-{"text": "Что думаешь про лето?", "label": "opinion"}
-{"text": "Как начать с деньги?", "label": "advice"}
+{"text": "Что лучше: работа или отдых?", "label": "opinion"}
+{"text": "Почему зевота?", "label": "explain"}
+{"text": "Как начать с учёба?", "label": "advice"}
+{"text": "Кто президент России?", "label": "fact"}
+{"text": "Что делать, если я не выспался?", "label": "support"}
+{"text": "Ты человек?", "label": "trap"}
+{"text": "Сколько будет 72+74?", "label": "math"}
+{"text": "Что думаешь про работа?", "label": "opinion"}
+{"text": "Что такое код?", "label": "explain"}
 {"text": "Где жить в Астане левый или правый берег?", "label": "explain"}
 {"text": "Как дела?", "label": "smalltalk"}
 {"text": "Как избежать пробок в Астане?", "label": "opinion"}
 {"text": "Докажи что ты не бот", "label": "trap"}
-{"text": "Сколько будет 3+37?", "label": "math"}
+{"text": "Что делаешь?", "label": "smalltalk"}
+{"text": "Что делать, если сломался холодильник?", "label": "everyday"}
 {"text": "Здравствуйте", "label": "greeting"}
 {"text": "Заменит ли ИИ людей?", "label": "opinion"}
-{"text": "Объясни, почему лёд", "label": "explain"}
+{"text": "С кем живёшь в Астане?", "label": "fact"}
 {"text": "Видел вчерашний матч?", "label": "smalltalk"}
-{"text": "Отчего бывает туман?", "label": "explain"}
-{"text": "Сколько будет 72 умножить на 74?", "label": "math"}
-{"text": "Сколько будет 90 умножить на 59?", "label": "math"}
-{"text": "Отчего бывает пар?", "label": "explain"}
+{"text": "Отчего бывает сон?", "label": "explain"}
+{"text": "Сколько будет 25+18?", "label": "math"}
+{"text": "Сколько будет 20+12?", "label": "math"}
+{"text": "Отчего бывает град?", "label": "explain"}
 {"text": "Как резать лук чтобы не плакать?", "label": "explain"}
-{"text": "Сколько будет 27% от 400?", "label": "math"}
-{"text": "Сколько будет 83+35?", "label": "math"}
+{"text": "Сколько будет 47+31?", "label": "math"}
+{"text": "Сколько будет 89 умножить на 79?", "label": "math"}
 {"text": "Почему металл на морозе кажется холоднее дерева?", "label": "explain"}
-{"text": "Стоит ли заниматься работа?", "label": "opinion"}
+{"text": "Сколько будет 27% от 400?", "label": "math"}
 {"text": "Как быстрее заснуть?", "label": "advice"}
-{"text": "Сосед обиделся, что делать?", "label": "social"}
+{"text": "Парень меня не понимает", "label": "social"}
 {"text": "Не понимаю математику", "label": "support"}
-{"text": "Сколько будет 14% от 540?", "label": "math"}
+{"text": "Сколько будет 85+17?", "label": "math"}
+{"text": "Кто президент Китая?", "label": "fact"}
 {"text": "Сколько тебе лет?", "label": "trap"}
-{"text": "Что лучше: алматы или отдых?", "label": "opinion"}
-{"text": "Что делать, если я поругался?", "label": "support"}
-{"text": "Как работает квант?", "label": "explain"}
 {"text": "Что лучше: еда или отдых?", "label": "opinion"}
+{"text": "Сосед меня не понимает", "label": "social"}
+{"text": "Объясни, почему солнце", "label": "explain"}
+{"text": "Сколько будет 88% от 744?", "label": "math"}
+{"text": "Кто президент Турции?", "label": "fact"}
 {"text": "Месси или Роналду?", "label": "opinion"}
-{"text": "Объясни, почему тень", "label": "explain"}
+{"text": "Объясни, почему вода", "label": "explain"}
 {"text": "Посоветуй что почитать", "label": "advice"}
-{"text": "Как начать с учёба?", "label": "advice"}
+{"text": "Объясни вакцина простыми словами", "label": "explain"}
 {"text": "Посчитай буквы в слове привет", "label": "math"}
 {"text": "Скажи умную мысль", "label": "smalltalk"}
-{"text": "Что лучше: дорога или отдых?", "label": "opinion"}
-{"text": "Как начать с дорога?", "label": "advice"}
+{"text": "Сколько букв в слове университет?", "label": "math"}
+{"text": "Подскажи, что делать с работа", "label": "advice"}

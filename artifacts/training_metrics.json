@@ -1,11 +1,11 @@
 {
-  "corpus_size": 92,
+  "corpus_size": 101,
   "dialogue_pairs": 0,
-  "intent_rows": 709,
-  "vocab_size": 1570,
+  "intent_rows": 736,
+  "vocab_size": 1626,
   "device": "cpu",
-  "created": "2026-11-20T16:42:52Z",
-  "intent_accuracy": 0.7183,
+  "created": "2026-11-20T16:52:01Z",
+  "intent_accuracy": 0.7297,
   "intent_labels": [
     "advice",
     "everyday",
@@ -19,9 +19,9 @@
     "support",
     "trap"
   ],
-  "contrastive_pairs": 722,
-  "encoder_loss": 1.2454,
+  "contrastive_pairs": 791,
+  "encoder_loss": 1.2613,
   "retrieval_recall@1": 1.0,
   "retrieval_recall@5": 1.0,
-  "retrieval_queries": 9
+  "retrieval_queries": 10
 }
