@@ -6,3 +6,7 @@ venv/
 *.log
 .ipynb_checkpoints/
 .env
+artifacts_smoke/
+artifacts_test/
+happy-artifacts-*.zip
+artifacts/checkpoints/

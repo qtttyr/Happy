@@ -23,7 +23,7 @@ PAGE = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Тьюринг Арена</title>
+<title>Happy · Тьюринг Арена</title>
 <style>
   :root{
     --bg:#0a090c; --card:#141218; --card2:#1c1922; --line:#2a2632;
@@ -95,14 +95,14 @@ PAGE = r"""<!doctype html>
 <body>
 <header>
   <span class="dot"></span>
-  <span class="title">Тьюринг Арена</span>
-  <span class="tag">локально · без сети</span>
+  <span class="title">Happy</span>
+  <span class="tag">Тьюринг Арена · локально · без сети</span>
   <span class="spacer"></span>
   <span class="tag" id="round">раунд 0</span>
 </header>
 
 <main id="log"><div class="wrap" id="wrap">
-  <div class="row her"><div class="bubble">привет. задавай вопрос, я отвечу)<div class="meta">готов</div></div></div>
+  <div class="row her"><div class="bubble">привет. задавай вопрос, отвечу)<div class="meta">готов</div></div></div>
 </div></main>
 
 <footer>
@@ -250,8 +250,9 @@ def main() -> None:
     Handler.bot = bot
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     url = f"http://{args.host}:{args.port}/"
-    print(f"Тьюринг Арена · локальный режим · {url}")
+    print(f"Happy · локальный режим · {url}")
     print(f"корпус: {len(bot.corpus)} записей · офлайн, сеть не используется")
+    print(f"dense: {'ON' if bot.dense is not None else 'OFF (BM25 only)'}")
     if not args.no_browser:
         threading.Timer(0.6, lambda: webbrowser.open(url)).start()
     try:

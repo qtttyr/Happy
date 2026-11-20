@@ -22,12 +22,15 @@ class Hit:
     shared: int = 0
     coverage: float = 0.0
     exact: bool = False
+    dense: float = 0.0
+    rank: float = 0.0
 
 
 class Retriever:
-    def __init__(self, corpus: list[dict], index: BM25Index) -> None:
+    def __init__(self, corpus: list[dict], index: BM25Index, dense=None) -> None:
         self.corpus = corpus
         self.index = index
+        self.dense = dense
         self.exact: dict[str, int] = {}
         for i, item in enumerate(corpus):
             for q in [item.get("q", ""), *item.get("variants", [])]:
@@ -35,7 +38,9 @@ class Retriever:
                 if key:
                     self.exact.setdefault(key, i)
 
-    def search(self, question: str, top_k: int = 5, topic: str | None = None) -> list[Hit]:
+    def search(
+        self, question: str, top_k: int = 5, topic: str | None = None, intent: str | None = None
+    ) -> list[Hit]:
         qtokens = tokens(question)
         q_terms = set(qtokens)
         key = normalize(question)
@@ -58,10 +63,23 @@ class Retriever:
             rel = score / mass
             if topic and self.corpus[idx].get("topic") == topic:
                 rel *= 1.06
+            if intent and self.corpus[idx].get("intent") == intent:
+                rel *= 1.05
             hit = self._make(idx, score, qtokens, q_terms, rel=min(1.0, rel))
             hits.append(hit)
 
-        hits.sort(key=lambda h: (h.exact, h.rel), reverse=True)
+        for hit in hits:
+            hit.rank = hit.rel
+        if self.dense is not None:
+            try:
+                vector = self.dense.encode(question)
+                scores = self.dense.scores(vector, [h.idx for h in hits])
+                for hit in hits:
+                    hit.dense = scores.get(hit.idx, 0.0)
+                    hit.rank = 0.55 * hit.rel + 0.45 * max(0.0, hit.dense)
+            except Exception:
+                pass
+        hits.sort(key=lambda h: (h.exact, h.rank, h.rel), reverse=True)
         return hits[:top_k]
 
     def _make(

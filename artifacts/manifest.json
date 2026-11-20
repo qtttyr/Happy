@@ -1,0 +1,66 @@
+{
+  "run": "local",
+  "created": "2026-11-20T16:43:10Z",
+  "repo": null,
+  "files": {
+    "vocab.json": {
+      "sha256": "24623593f3e948080fa343955262616fd3170a5edbcaaa6bab34772795832d20",
+      "bytes": 63776
+    },
+    "intent_model.pt": {
+      "sha256": "9248bfcc8c964799281f96790e2b5263d470862bc8889c8ab76372fbf952c7d4",
+      "bytes": 7219433
+    },
+    "bi_encoder.pt": {
+      "sha256": "f3428954f06db18a07a89187eab960977da23796909dfedd7802d6db682ac5e9",
+      "bytes": 5099125
+    },
+    "labels.json": {
+      "sha256": "f5725cd0beda862b335d644ef40c3d2e01cec9f26cbdba35680d0dde1b47f793",
+      "bytes": 114
+    },
+    "bm25.pkl": {
+      "sha256": "a4b718d8b20c3f93128adad3435319f2f711f5854de8bf5db5e7c84eedd106d2",
+      "bytes": 35200
+    },
+    "corpus.jsonl": {
+      "sha256": "2bb51c515153e2cecb29be23260084abed54d8d16b3c851064ed7d215aabb60a",
+      "bytes": 42468
+    },
+    "corpus_vectors.npy": {
+      "sha256": "429fa437494923de9d9d96fbb2771b9b55ecf5a7b4b1f5bd3395f654e184f68f",
+      "bytes": 23680
+    },
+    "training_metrics.json": {
+      "sha256": "971038ff69865128a700f80440aa5870d0d0e54939b553b2d46eb3b1b7518033",
+      "bytes": 496
+    }
+  },
+  "metrics": {
+    "corpus_size": 92,
+    "dialogue_pairs": 0,
+    "intent_rows": 709,
+    "vocab_size": 1570,
+    "device": "cpu",
+    "created": "2026-11-20T16:42:52Z",
+    "intent_accuracy": 0.7183,
+    "intent_labels": [
+      "advice",
+      "everyday",
+      "explain",
+      "fact",
+      "greeting",
+      "math",
+      "opinion",
+      "smalltalk",
+      "social",
+      "support",
+      "trap"
+    ],
+    "contrastive_pairs": 722,
+    "encoder_loss": 1.2454,
+    "retrieval_recall@1": 1.0,
+    "retrieval_recall@5": 1.0,
+    "retrieval_queries": 9
+  }
+}

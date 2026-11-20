@@ -43,9 +43,11 @@ class NetworkDisabled(socket.socket):
 
 
 def main() -> int:
-    print("preflight: загрузка движка…")
+    print("Happy preflight: загрузка движка…")
     bot = TuringBot(seed=7)
     print(f"  корпус: {len(bot.corpus)} записей, {len(bot.index.postings)} термов")
+    print(f"  dense:  {'ON' if bot.dense is not None else 'OFF (BM25 only)'}"
+          + (f" · {bot.dense_error}" if bot.dense_error else ""))
 
     socket.socket = NetworkDisabled  # from here on any network call raises
     print("preflight: сеть отключена на уровне процесса\n")

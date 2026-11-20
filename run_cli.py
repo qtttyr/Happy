@@ -25,7 +25,7 @@ def main() -> None:
     args = parser.parse_args()
 
     bot = TuringBot(seed=args.seed, humanize=not args.raw)
-    print("Тьюринг Арена · локальный режим (offline)")
+    print("Happy · локальный режим (offline)")
     print("Команды: /reset, /debug, /quit\n")
 
     debug = False

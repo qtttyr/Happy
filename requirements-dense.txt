@@ -1,0 +1,3 @@
+# Full hybrid: BM25 + own bi-encoder (torch). Without it the bot runs BM25-only.
+-r requirements.txt
+torch>=2.4

@@ -66,7 +66,28 @@ class TuringBot:
 
         self.corpus = self._load_corpus()
         self.index = self._load_or_build_index()
-        self.retriever = Retriever(self.corpus, self.index)
+        self.dense = None
+        self.dense_error = None
+        try:
+            from .dense import DenseIndex
+
+            self.dense = DenseIndex(self.root / "artifacts", corpus_size=len(self.corpus))
+        except Exception as exc:  # BM25-only mode is a feature, not a failure
+            self.dense_error = repr(exc)
+        self.intent_predictor = None
+        self.intent_error = None
+        try:
+            from .intent import IntentPredictor
+
+            self.intent_predictor = IntentPredictor(self.root / "artifacts")
+        except Exception as exc:
+            self.intent_error = repr(exc)
+        self.retriever = Retriever(self.corpus, self.index, dense=self.dense)
+        if self.dense is not None:
+            try:  # warm up the LSTM so the first live answer is not 40 ms
+                self.dense.encode("привет")
+            except Exception:
+                pass
 
     # ------------------------------------------------------------------ setup
     def _load_cfg(self) -> dict:
@@ -151,16 +172,28 @@ class TuringBot:
                 text, intent="solver", topic="logic", source="solver", confidence=1.0
             )
 
-        hits = self.retriever.search(question, top_k=7)
+        predicted, intent_prob = ("", 0.0)
+        if self.intent_predictor is not None:
+            try:
+                predicted, intent_prob = self.intent_predictor.predict(question)
+            except Exception:
+                predicted, intent_prob = "", 0.0
+        intent_hint = predicted if intent_prob >= 0.45 else None
+
+        hits = self.retriever.search(question, top_k=7, intent=intent_hint)
         q_terms = set(tokens(question))
         high = float(self.cfg.get("tau_high", 0.30))
         mid = float(self.cfg.get("tau_mid", 0.19))
 
         best = next((h for h in hits if h.rel >= high and self._accept(h, q_terms)), None)
         if best and best.rel >= high:
-            return self._from_hit(best, question)
+            return self._from_hit(best, question, predicted=predicted, intent_prob=intent_prob)
 
-        if _TRAP.search(q_norm) or _PROVE.search(q_norm):
+        if (
+            _TRAP.search(q_norm)
+            or _PROVE.search(q_norm)
+            or (predicted == "trap" and intent_prob >= 0.75)
+        ):
             return self._finish(
                 self.persona.defense_line(),
                 intent="trap", topic="trap", source="persona", confidence=0.9,
@@ -169,7 +202,9 @@ class TuringBot:
 
         soft = next((h for h in hits if h.rel >= mid and self._accept(h, q_terms)), None)
         if soft:
-            return self._from_hit(soft, question, hedged=True)
+            return self._from_hit(
+                soft, question, hedged=True, predicted=predicted, intent_prob=intent_prob
+            )
 
         fact = self.composer.find_fact(question)
         if fact:
@@ -186,7 +221,10 @@ class TuringBot:
         )
 
     # ------------------------------------------------------------------ pieces
-    def _from_hit(self, hit: Hit, question: str, hedged: bool = False) -> Answer:
+    def _from_hit(
+        self, hit: Hit, question: str, hedged: bool = False,
+        predicted: str = "", intent_prob: float = 0.0,
+    ) -> Answer:
         item = hit.item
         variants = [item.get("a", "")] + [item.get(k, "") for k in ("a2", "a3")]
         variants = [v for v in variants if v]
@@ -207,7 +245,14 @@ class TuringBot:
             topic=item.get("topic", "smalltalk"),
             source="kb",
             confidence=round(hit.rel, 3),
-            debug={"match_q": item.get("q", ""), "id": item.get("id", "")},
+            debug={
+                "match_q": item.get("q", ""),
+                "id": item.get("id", ""),
+                "dense": round(hit.dense, 3),
+                "rel": round(hit.rel, 3),
+                "intent": predicted,
+                "intent_p": round(intent_prob, 3),
+            },
         )
 
     def _frame_solution(self, sol: Solution) -> str:

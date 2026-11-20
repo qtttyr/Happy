@@ -1,0 +1,27 @@
+{
+  "corpus_size": 92,
+  "dialogue_pairs": 0,
+  "intent_rows": 709,
+  "vocab_size": 1570,
+  "device": "cpu",
+  "created": "2026-11-20T16:42:52Z",
+  "intent_accuracy": 0.7183,
+  "intent_labels": [
+    "advice",
+    "everyday",
+    "explain",
+    "fact",
+    "greeting",
+    "math",
+    "opinion",
+    "smalltalk",
+    "social",
+    "support",
+    "trap"
+  ],
+  "contrastive_pairs": 722,
+  "encoder_loss": 1.2454,
+  "retrieval_recall@1": 1.0,
+  "retrieval_recall@5": 1.0,
+  "retrieval_queries": 9
+}
