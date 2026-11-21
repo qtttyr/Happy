@@ -245,7 +245,7 @@ class TuringBot:
 
         if (
             self.generator is not None
-            and predicted in {"smalltalk", "opinion"}
+            and predicted in {"smalltalk", "opinion", "greeting"}
             and intent_prob >= 0.45
         ):
             try:
