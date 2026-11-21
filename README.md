@@ -113,7 +113,7 @@ python scripts/train.py --smoke --out artifacts_smoke --no-push
 
 # полный прогон (так его запускает Kaggle)
 python scripts/train.py --out artifacts --run-name kaggle-main \
-    --hf-repo mkstudio/happy-artifacts --push-every-epoch --resume
+    --hf-repo vaprooll/Happy --push-every-epoch --resume
 ```
 
 Что обучается:

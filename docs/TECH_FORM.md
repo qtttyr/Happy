@@ -192,7 +192,7 @@ source .venv/bin/activate
 pip install -r requirements-dense.txt
 
 # 3. артефакты: либо уже в репозитории, либо скачать с Hugging Face
-python scripts/pull_model.py --repo mkstudio/happy-artifacts
+python scripts/pull_model.py --repo vaprooll/Happy
 
 # 4. офлайн-проверка (сокеты запрещены)
 python scripts/preflight.py

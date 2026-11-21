@@ -1,7 +1,7 @@
 """Download the latest trained artifacts from Hugging Face and verify them.
 
-    python scripts/pull_model.py --repo mkstudio/happy-artifacts
-    python scripts/pull_model.py --repo mkstudio/happy-artifacts --run kaggle-main
+    python scripts/pull_model.py --repo vaprooll/Happy
+    python scripts/pull_model.py --repo vaprooll/Happy --run kaggle-main
 
 The command is idempotent: files with a matching sha256 are skipped.
 After it finishes, `artifacts/` is ready for a fully offline run.

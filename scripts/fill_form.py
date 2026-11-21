@@ -34,7 +34,7 @@ DATA_62 = """Python 3.12.16; numpy ≥2.0 (векторы, индекс); pymorp
 RUN_71 = """python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dense.txt
-python scripts/pull_model.py --repo mkstudio/happy-artifacts  (или артефакты уже в репозитории)
+python scripts/pull_model.py --repo vaprooll/Happy  (или артефакты уже в репозитории)
 python scripts/preflight.py  (проверка офлайн-режима, сокеты запрещены)
 python run_ui.py  → http://127.0.0.1:8000/
 python run_cli.py  — терминальный режим

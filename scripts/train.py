@@ -11,7 +11,7 @@ Persistence ladder (a dead Kaggle session costs at most one epoch):
   4. manifest.json with sha256 for every artifact
 
 Usage (Kaggle):
-    python scripts/train.py --hf-repo mkstudio/happy-artifacts --run-name kaggle-main --push-every-epoch
+    python scripts/train.py --hf-repo vaprooll/Happy --run-name kaggle-main --push-every-epoch
 
 Usage (local smoke test):
     python scripts/train.py --smoke --out artifacts_smoke --no-push

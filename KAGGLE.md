@@ -36,12 +36,12 @@ smoke-теста и отладки. Здесь описано, как сдела
 
 1. Аккаунт HF.
 2. Settings → **Access Tokens** → New token → тип **Write**.
-3. Создать **model**-репозиторий, например `mkstudio/happy-artifacts`, **private**.
+3. Создать **model**-репозиторий, например `vaprooll/Happy`, **private**.
    (Скрипт создаст его сам, если токен с write.)
 
 ### GitHub
 
-Репозиторий с кодом, например `mkstudio/happy`.
+Репозиторий с кодом, например `qtttyr/Happy`.
 Для Kaggle удобнее **публичный** — тогда не нужен `GH_TOKEN`.
 Секретов в коде нет, поэтому публичность безопасна.
 
@@ -54,8 +54,8 @@ smoke-теста и отладки. Здесь описано, как сдела
 | Имя | Значение | Обязательно |
 |---|---|---|
 | `HF_TOKEN` | `hf_...` (write) | да |
-| `HF_REPO` | `mkstudio/happy-artifacts` | да |
-| `GH_REPO` | `mkstudio/happy` | да |
+| `HF_REPO` | `vaprooll/Happy` | да |
+| `GH_REPO` | `qtttyr/Happy` | да |
 | `GH_TOKEN` | GitHub token (только для private repo) | нет |
 
 Ноутбук читает их через `UserSecretsClient`, в код они не попадают.
@@ -130,7 +130,7 @@ kaggle kernels output ТВОЙ_НИК/happy-train -p kaggle_out   # третья
 
 ```bash
 export HF_TOKEN=hf_...
-python scripts/pull_model.py --repo mkstudio/happy-artifacts
+python scripts/pull_model.py --repo vaprooll/Happy
 ```
 
 Скрипт:
