@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.hf_store import HFStore  # noqa: E402
 
-FILES = [
+CORE = [
     "vocab.json",
     "intent_model.pt",
     "bi_encoder.pt",
@@ -29,6 +29,7 @@ FILES = [
     "corpus_vectors.npy",
     "training_metrics.json",
 ]
+OPTIONAL = ["seq2seq.pt"]
 
 
 def main() -> int:
@@ -40,10 +41,12 @@ def main() -> int:
     args = parser.parse_args()
 
     out = Path(args.out)
-    missing = [name for name in FILES if not (out / name).exists()]
+    files = [out / name for name in CORE]
+    missing = [path.name for path in files if not path.exists()]
     if missing:
         print("missing:", missing)
         return 1
+    files.extend(out / name for name in OPTIONAL if (out / name).exists())
 
     metrics = json.loads((out / "training_metrics.json").read_text(encoding="utf-8"))
     store = HFStore(args.hf_repo, run=args.run_name)
@@ -51,10 +54,10 @@ def main() -> int:
     if not store.enabled:
         return 2
 
-    for name in FILES:
-        store.push(out / name, f"{args.run_name}/{name}")
+    for path in files:
+        store.push(path, f"{args.run_name}/{path.name}")
     manifest = store.push_manifest(
-        [out / name for name in FILES], dest=out / "manifest.json", extra={"metrics": metrics}
+        files, dest=out / "manifest.json", extra={"metrics": metrics}
     )
 
     (out / "DONE").write_text(

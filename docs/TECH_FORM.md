@@ -101,6 +101,9 @@
 - классификатор интентов: BiLSTM + attention pooling (PyTorch, с нуля);
 - Siamese bi-encoder: общий BiLSTM, mean+max pooling, 128-мерный L2-нормированный
   вектор, контрастивная функция InfoNCE с in-batch негативами;
+- экспериментальный seq2seq: GRU encoder-decoder с attention, обучен с нуля
+  на 50 тыс. диалогов; используется только как последний фолбэк с quality gate
+  и по умолчанию отключён;
 - детерминированные решатели на регулярных выражениях и безопасном AST-eval;
 - композер фраз и человеческие фолбэки;
 - персона, память раунда, humanizer.
@@ -117,10 +120,11 @@ API-вызова, ни `transformers`, ни `sentence-transformers`, ни `word2
 |---|---|---|
 | Токенизатор | BPE, 2 000 слияний | обучен с нуля на корпусе проекта |
 | IntentClassifier | BiLSTM (2 слоя) + attention | обучен с нуля, 2 693 размеченных примера |
-| Bi-encoder | Siamese BiLSTM, 128-d | обучен с нуля, 3 746 контрастивных пар |
+| Bi-encoder | Siamese BiLSTM, 128-d | обучен с нуля, 3 990 контрастивных пар |
+| Seq2seq (опционально) | GRU + attention | обучен с нуля на 50 тыс. диалогов; выключен по умолчанию |
 | BM25 | инвертированный индекс | собственная реализация |
 
-Артефакты: `vocab.json`, `intent_model.pt`, `bi_encoder.pt`, `bm25.pkl`,
+Артефакты: `vocab.json`, `intent_model.pt`, `bi_encoder.pt`, `seq2seq.pt` (опционально), `bm25.pkl`,
 `corpus.jsonl`, `corpus_vectors.npy`, `training_metrics.json`.
 Скрипт обучения: `scripts/train.py`. Метрики: `artifacts/training_metrics.json`.
 
@@ -128,10 +132,10 @@ API-вызова, ни `transformers`, ни `sentence-transformers`, ни `word2
 
 | Метрика | Значение |
 |---|---|
-| Курируемая база | 1 207 записей / 2 559 формулировок |
-| Intent accuracy (val) | 0.739 |
-| Contrastive loss | 0.207 |
-| Paraphrase Recall@1 / @5 | 0.858 / 0.908 (120 запросов) |
+| Курируемая база | 1 210 записей / 2 569 формулировок |
+| Intent accuracy (val) | 0.715 |
+| Contrastive loss | 0.228 |
+| Paraphrase Recall@1 / @5 | 0.884 / 0.950 (120 запросов) |
 | p50 / p95 latency | 1.8 / 2.8 мс |
 | Пустых ответов | 0 |
 | Реалистичный аудиторский набор (195) | **195/195** |

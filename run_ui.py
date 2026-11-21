@@ -244,9 +244,10 @@ def main() -> None:
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--no-browser", action="store_true")
     parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument("--gen", action="store_true")
     args = parser.parse_args()
 
-    bot = TuringBot(seed=args.seed)
+    bot = TuringBot(seed=args.seed, use_generator=True if args.gen else None)
     Handler.bot = bot
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     url = f"http://{args.host}:{args.port}/"

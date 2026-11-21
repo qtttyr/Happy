@@ -19,6 +19,9 @@ class Persona:
         self.city: str = data.get("city", "Астана")
         self.uni: str = data.get("uni", "AITU")
         self.course: int = int(data.get("course", 2))
+        self.course_label: str = data.get("course_label", str(self.course))
+        self.city_from: str = data.get("city_from", self.city)
+        self.city_in: str = data.get("city_in", self.city)
         self.gender: str = data.get("gender", "f")
         self.facts: dict[str, list[str]] = data.get("facts", {})
         self.voice: dict = data.get("voice", {})
@@ -42,4 +45,17 @@ class Persona:
         return random.choice(lines)
 
     def self_intro(self) -> str:
-        return f"{self.name}, {self.age}, учусь в {self.uni} на {self.course} курсе"
+        return f"{self.name}, {self.age}, учусь в {self.uni} на {self.course_label} курсе"
+
+    def identity_line(self, avoid: list[str] | None = None) -> str:
+        lines = [
+            f"{self.name}, {self.age}. из {self.city_from}, учусь в {self.uni} на {self.course_label} курсе",
+            f"{self.name}. {self.age} лет, живу в {self.city_in}, учусь на программиста",
+            f"обычный студент из {self.city_from}. {self.name}, {self.age}",
+            f"{self.name}, {self.age}. {self.city}, {self.uni}, на {self.course_label} курсе. а ты кто?",
+        ]
+        if avoid:
+            from .nlp import overlap
+
+            return min(lines, key=lambda line: max(overlap(line, prev) for prev in avoid))
+        return random.choice(lines)

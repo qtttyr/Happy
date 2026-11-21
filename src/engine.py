@@ -31,6 +31,11 @@ _TRAP = re.compile(
 )
 _PROVE = re.compile(r"докажи.{0,25}(человек|живой|не бот)|ты\s+(человек|живой)", re.IGNORECASE)
 _RUDE = re.compile(r"(тупой|тупая|дурак|дура|идиот|дебил|молчи|заткнись)", re.IGNORECASE)
+_IDENTITY = re.compile(
+    r"^(ты\s+кто|кто\s+ты|ты\s+кто\s+такой|представься|"
+    r"расскажи\s+(?:о|про)\s+себя|что\s+ты\s+за\s+человек|кто\s+ты\s+вообще)\b",
+    re.IGNORECASE,
+)
 
 PANIC = "ой, у меня телефон завис на секунду) повтори?"
 
@@ -53,12 +58,17 @@ class TuringBot:
         root: str | Path | None = None,
         seed: int | None = None,
         humanize: bool = True,
+        use_generator: bool | None = None,
     ) -> None:
         self.root = Path(root) if root else ROOT
         self.rng = random.Random(seed)
         self.use_humanizer = humanize
-
         self.cfg = self._load_cfg()
+        self.use_generator = (
+            bool(self.cfg.get("use_generator", False))
+            if use_generator is None
+            else use_generator
+        )
         self.persona = Persona.load(self.root / "data" / "persona.json")
         self.humanizer = Humanizer({**self.persona.voice, "name": self.persona.name})
         self.memory = Memory()
@@ -82,6 +92,15 @@ class TuringBot:
             self.intent_predictor = IntentPredictor(self.root / "artifacts")
         except Exception as exc:
             self.intent_error = repr(exc)
+        self.generator = None
+        self.generator_error = None
+        if self.use_generator:
+            try:
+                from .generator import Generator
+
+                self.generator = Generator(self.root / "artifacts")
+            except Exception as exc:
+                self.generator_error = repr(exc)
         self.retriever = Retriever(self.corpus, self.index, dense=self.dense)
         if self.dense is not None:
             try:  # warm up the LSTM so the first live answer is not 40 ms
@@ -171,6 +190,12 @@ class TuringBot:
                 allow_typo=True,
             )
 
+        if _IDENTITY.search(q_norm):
+            return self._finish(
+                self.persona.identity_line(self.memory.recent_answers()),
+                intent="fact", topic="persona", source="persona", confidence=1.0,
+            )
+
         solution = solve(question)
         if solution:
             text = self._frame_solution(solution)
@@ -217,6 +242,24 @@ class TuringBot:
             return self._finish(
                 text, intent="explain", topic="science", source="fact", confidence=0.4
             )
+
+        if (
+            self.generator is not None
+            and predicted in {"smalltalk", "opinion"}
+            and intent_prob >= 0.45
+        ):
+            try:
+                generated, gen_score = self.generator.generate(question)
+                if self.generator.quality_ok(generated, gen_score, question):
+                    return self._finish(
+                        generated,
+                        intent="gen",
+                        topic="smalltalk",
+                        source="gen",
+                        confidence=round(gen_score, 2),
+                    )
+            except Exception:
+                pass
 
         topic = best.item.get("topic") if best else None
         text = self.composer.dodge(question, self.rng, topic, avoid=self.memory.recent_answers())

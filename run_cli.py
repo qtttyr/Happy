@@ -21,10 +21,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pace", action="store_true", help="human typing pause")
     parser.add_argument("--raw", action="store_true", help="disable humanizer")
+    parser.add_argument("--gen", action="store_true", help="enable seq2seq fallback (off by default)")
     parser.add_argument("--seed", type=int, default=None)
     args = parser.parse_args()
 
-    bot = TuringBot(seed=args.seed, humanize=not args.raw)
+    bot = TuringBot(seed=args.seed, humanize=not args.raw, use_generator=True if args.gen else None)
     print("Happy · локальный режим (offline)")
     print("Команды: /reset, /debug, /quit\n")
 
@@ -51,7 +52,7 @@ def main() -> None:
         answer = bot.answer(question, pacing=args.pace)
         if args.pace and answer.typing_delay:
             time.sleep(answer.typing_delay)
-        print(f"она > {answer.text}")
+        print(f"он > {answer.text}")
         print(
             f"      {answer.latency_ms:.0f} мс · {answer.source} · "
             f"conf {answer.confidence:.2f} · {answer.topic}/{answer.intent}"

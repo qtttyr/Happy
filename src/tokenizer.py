@@ -124,6 +124,20 @@ class BPETokenizer:
         ids = ids[:limit] + [self.vocab[EOS]]
         return ids
 
+    def decode(self, ids: list[int] | tuple[int, ...]) -> str:
+        parts: list[str] = []
+        for token_id in ids:
+            if token_id in (0, 2):
+                continue
+            token = self.inv.get(int(token_id), "")
+            if token in {"<unk>", "</s>", "<pad>"} or not token:
+                continue
+            if token.endswith("</w>"):
+                parts.append(token[:-4] + " ")
+            else:
+                parts.append(token)
+        return "".join(parts).strip()
+
     @property
     def vocab_size(self) -> int:
         return len(self.vocab)
