@@ -57,6 +57,7 @@ def main() -> None:
     optimizer = AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
 
     best_recall = 0.0
+    best_recall5 = 0.0
     best_state = {k: v.detach().clone() for k, v in model.state_dict().items()}
     history = []
 
@@ -92,6 +93,7 @@ def main() -> None:
 
         if recall >= best_recall:
             best_recall = recall
+            best_recall5 = metrics["retrieval_recall@5"]
             best_state = {k: v.detach().clone() for k, v in model.state_dict().items()}
 
     model.load_state_dict(best_state)
@@ -108,10 +110,16 @@ def main() -> None:
 
     metrics_path = out / "training_metrics.json"
     metrics = json.loads(metrics_path.read_text(encoding="utf-8")) if metrics_path.exists() else {}
+    metrics["retrieval_recall@1"] = round(best_recall, 4)
+    metrics["retrieval_recall@5"] = round(best_recall5, 4)
+    if history:
+        metrics["encoder_loss"] = history[-1]["loss"]
+    metrics["finetuned"] = True
     metrics["finetune"] = {
         "epochs": args.epochs,
         "lr": args.lr,
         "best_recall@1": round(best_recall, 4),
+        "best_recall@5": round(best_recall5, 4),
         "history": history,
         "created": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
