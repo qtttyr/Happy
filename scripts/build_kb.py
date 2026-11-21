@@ -31,6 +31,7 @@ TOPICS = {
     "smalltalk": "smalltalk",
     "math": "logic",
     "fallbacks": "fallback",
+    "common": "smalltalk",
 }
 
 BANNED_OPENERS = ("конечно", "отличный вопрос", "хороший вопрос", "важно отметить", "таким образом")
@@ -48,6 +49,7 @@ def parse(path: Path, topic: str) -> list[dict]:
             parts.append("")
         ident, question, answer, intent = parts[:4]
         tags_raw, variants_raw = parts[4], parts[5]
+        answers_raw = parts[6] if len(parts) > 6 else ""
         if not ident or not question or not answer:
             print(f"  ! {path.name}:{lineno}: missing field, skipped")
             continue
@@ -60,17 +62,20 @@ def parse(path: Path, topic: str) -> list[dict]:
             answer = answer[:237].rstrip() + "…"
         if answer.lower().startswith(BANNED_OPENERS):
             print(f"  ! {path.name}:{lineno}: bookish opener")
-        rows.append(
-            {
-                "id": ident,
-                "q": question,
-                "a": answer,
-                "topic": topic,
-                "intent": intent or "smalltalk",
-                "tags": tags,
-                "variants": variants,
-            }
-        )
+        row = {
+            "id": ident,
+            "q": question,
+            "a": answer,
+            "topic": topic,
+            "intent": intent or "smalltalk",
+            "tags": tags,
+            "variants": variants,
+        }
+        for index, extra in enumerate(
+            [a.strip() for a in answers_raw.split(";") if a.strip()], start=2
+        ):
+            row[f"a{index}"] = extra
+        rows.append(row)
     return rows
 
 

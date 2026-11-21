@@ -7,10 +7,10 @@
   "uni": "AITU",
   "course": 1,
   "voice": {
-    "lowercase_p": 0.62,
-    "drop_period_p": 0.55,
-    "paren_p": 0.22,
-    "typo_p": 0.04,
+    "lowercase_p": 0.78,
+    "drop_period_p": 0.72,
+    "paren_p": 0.28,
+    "typo_p": 0.03,
     "emoji_p": 0.0
   },
   "facts": {

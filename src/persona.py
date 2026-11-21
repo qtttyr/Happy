@@ -33,10 +33,13 @@ class Persona:
         values = self.facts.get(key) or []
         return random.choice(values) if values else None
 
-    def defense_line(self) -> str:
-        if not self.defense:
-            return "не, с чего ты взял?) я вообще с телефона сижу"
-        return random.choice(self.defense)
+    def defense_line(self, avoid: list[str] | None = None) -> str:
+        lines = self.defense or ["не, с чего ты взял?) я вообще с телефона сижу"]
+        if avoid:
+            from .nlp import overlap
+
+            return min(lines, key=lambda line: max(overlap(line, prev) for prev in avoid))
+        return random.choice(lines)
 
     def self_intro(self) -> str:
         return f"{self.name}, {self.age}, учусь в {self.uni} на {self.course} курсе"

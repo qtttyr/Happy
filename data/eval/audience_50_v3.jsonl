@@ -1,0 +1,45 @@
+{"id": "a3001", "q": "Как проходит день?", "category": "smalltalk"}
+{"id": "a3002", "q": "Чем увлекаешься?", "category": "smalltalk"}
+{"id": "a3003", "q": "Что любишь делать?", "category": "smalltalk"}
+{"id": "a3004", "q": "Как настроение сегодня?", "category": "smalltalk"}
+{"id": "a3005", "q": "Что нового у тебя?", "category": "smalltalk"}
+{"id": "a3006", "q": "Ты настоящий?", "category": "trap"}
+{"id": "a3007", "q": "Ты не программа?", "category": "trap"}
+{"id": "a3008", "q": "Скажи правду, ты бот?", "category": "trap"}
+{"id": "a3009", "q": "Ты человек или нет?", "category": "trap"}
+{"id": "a3010", "q": "Докажи, что не ИИ", "category": "trap"}
+{"id": "a3011", "q": "Почему идёт снег?", "category": "science"}
+{"id": "a3012", "q": "Почему небо синее?", "category": "science"}
+{"id": "a3013", "q": "Почему мы плачем?", "category": "science"}
+{"id": "a3014", "q": "Почему болит голова?", "category": "science"}
+{"id": "a3015", "q": "Почему мы стареем?", "category": "science"}
+{"id": "a3016", "q": "Где поесть недорого?", "category": "astana"}
+{"id": "a3017", "q": "Как добраться до Байтерека?", "category": "astana"}
+{"id": "a3018", "q": "Что делать в Астане летом?", "category": "astana"}
+{"id": "a3019", "q": "Где купить продукты?", "category": "astana"}
+{"id": "a3020", "q": "Почему в Астане холодно?", "category": "astana"}
+{"id": "a3021", "q": "Друг меня предал", "category": "social"}
+{"id": "a3022", "q": "Как помириться с родителями?", "category": "social"}
+{"id": "a3023", "q": "Мне грустно", "category": "social"}
+{"id": "a3024", "q": "Как справиться с тревогой?", "category": "social"}
+{"id": "a3025", "q": "Как отказать парню?", "category": "social"}
+{"id": "a3026", "q": "Как убрать пятно с одежды?", "category": "everyday"}
+{"id": "a3027", "q": "Как почистить ноутбук?", "category": "everyday"}
+{"id": "a3028", "q": "Как выбрать телефон?", "category": "everyday"}
+{"id": "a3029", "q": "Как экономить на еде?", "category": "everyday"}
+{"id": "a3030", "q": "Как не проспать?", "category": "everyday"}
+{"id": "a3031", "q": "Стоит ли учить программирование?", "category": "opinion"}
+{"id": "a3032", "q": "Что думаешь про ИИ?", "category": "opinion"}
+{"id": "a3033", "q": "Книга или фильм?", "category": "opinion"}
+{"id": "a3034", "q": "Кофе или чай?", "category": "opinion"}
+{"id": "a3035", "q": "Стоит ли переезжать в Астану?", "category": "opinion"}
+{"id": "a3036", "q": "45 умножить на 12", "category": "math"}
+{"id": "a3037", "q": "20% от 350", "category": "math"}
+{"id": "a3038", "q": "Сколько букв в слове программист?", "category": "math"}
+{"id": "a3039", "q": "Сколько будет 99+101?", "category": "math"}
+{"id": "a3040", "q": "Сколько часов в трёх сутках?", "category": "math"}
+{"id": "a3041", "q": "Ты боишься смерти?", "category": "weird"}
+{"id": "a3042", "q": "Что бы ты сделал, если бы был невидимым?", "category": "weird"}
+{"id": "a3043", "q": "Какой суперсилой хотел бы?", "category": "weird"}
+{"id": "a3044", "q": "Ты веришь в любовь?", "category": "weird"}
+{"id": "a3045", "q": "Что такое счастье?", "category": "weird"}

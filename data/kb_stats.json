@@ -1,38 +1,42 @@
 {
   "science": {
-    "rows": 184,
-    "variants": 186
+    "rows": 192,
+    "variants": 194
   },
   "astana": {
-    "rows": 131,
-    "variants": 132
+    "rows": 137,
+    "variants": 138
   },
   "social": {
-    "rows": 162,
-    "variants": 163
+    "rows": 169,
+    "variants": 170
   },
   "traps": {
-    "rows": 116,
-    "variants": 117
+    "rows": 119,
+    "variants": 121
   },
   "everyday": {
-    "rows": 135,
-    "variants": 135
+    "rows": 144,
+    "variants": 144
   },
   "opinions": {
-    "rows": 120,
-    "variants": 120
+    "rows": 126,
+    "variants": 126
   },
   "smalltalk": {
-    "rows": 108,
-    "variants": 108
+    "rows": 117,
+    "variants": 118
   },
   "math": {
     "rows": 55,
     "variants": 55
   },
   "fallbacks": {
-    "rows": 30,
-    "variants": 30
+    "rows": 36,
+    "variants": 36
+  },
+  "common": {
+    "rows": 23,
+    "variants": 23
   }
 }

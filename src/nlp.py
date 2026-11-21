@@ -75,6 +75,34 @@ def tokens(text: str, lemmatize: bool = True, drop_stop: bool = True) -> list[st
     return out
 
 
+SYNONYMS: dict[str, tuple[str, ...]] = {
+    "проходить": ("пройти",),
+    "увлекаться": ("интересоваться", "хобби"),
+    "экономить": ("копить",),
+    "выбрать": ("подобрать",),
+    "проспать": ("встать", "будильник"),
+    "помириться": ("мир", "ссора"),
+    "тревога": ("беспокойство", "тревожиться"),
+    "стареть": ("старость", "возраст"),
+    "болеть": ("боль",),
+    "невидимый": ("невидимость",),
+    "суперсила": ("способность",),
+    "холодно": ("холод", "мороз"),
+    "недорого": ("дешево",),
+    "переезжать": ("переезд",),
+    "любить": ("нравиться",),
+    "делать": ("заниматься",),
+}
+
+
+def expand_tokens(words: list[str]) -> list[str]:
+    """Hand-built synonym expansion. No pretrained embeddings."""
+    out = list(words)
+    for word in words:
+        out.extend(SYNONYMS.get(word, ()))
+    return out
+
+
 def content_words(text: str) -> list[str]:
     """Content lemmas sorted by length (longest first) - used by the composer."""
     words = [w for w in tokens(text) if len(w) > 2]

@@ -4,12 +4,17 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .index import BM25Index
-from .nlp import normalize, tokens
+from .nlp import expand_tokens, normalize, tokens
 
 
 def index_text(item: dict) -> str:
     parts = [item.get("q", ""), *item.get("variants", []), *item.get("tags", [])]
     return " ".join(parts)
+
+
+def question_text(item: dict) -> str:
+    """Only the question side. Tags help BM25 recall but must not pass the precision gate."""
+    return " ".join([item.get("q", ""), *item.get("variants", [])])
 
 
 @dataclass
@@ -46,8 +51,11 @@ class Retriever:
     def search(
         self, question: str, top_k: int = 5, topic: str | None = None, intent: str | None = None
     ) -> list[Hit]:
-        qtokens = tokens(question)
-        q_terms = set(qtokens)
+        base_tokens = tokens(question)
+        if not base_tokens:
+            base_tokens = tokens(question, drop_stop=False)
+        q_terms = set(base_tokens)
+        qtokens = expand_tokens(base_tokens)
         key = normalize(question)
 
         hits: list[Hit] = []
@@ -58,7 +66,7 @@ class Retriever:
             hit.rel = 1.0
             hits.append(hit)
 
-        mass = self.index.query_mass(qtokens)
+        mass = self.index.query_mass(base_tokens)
         scores = self.index.score(qtokens)
         ranked = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)[: max(top_k * 8, 30)]
         seen = {h.idx for h in hits}
@@ -91,7 +99,7 @@ class Retriever:
         self, idx: int, score: float, qtokens: list[str], q_terms: set[str], rel: float | None = None
     ) -> Hit:
         item = self.corpus[idx]
-        doc_terms = set(tokens(index_text(item)))
+        doc_terms = set(tokens(question_text(item)))
         shared = len(q_terms & doc_terms)
         coverage = shared / len(q_terms) if q_terms else 0.0
         return Hit(

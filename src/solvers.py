@@ -9,6 +9,7 @@ import ast
 import re
 from dataclasses import dataclass
 from datetime import datetime
+from fractions import Fraction
 
 from .nlp import normalize
 
@@ -65,6 +66,21 @@ def _fmt(value: float) -> str:
     if abs(value - round(value)) < 1e-9:
         return str(int(round(value)))
     return f"{value:.4f}".rstrip("0").rstrip(".").replace(".", ",")
+
+
+def _fraction(q: str) -> Solution | None:
+    m = re.search(r"(\d+)\s*/\s*(\d+)\s*(плюс|минус)\s*(\d+)\s*/\s*(\d+)", q)
+    if m:
+        first = Fraction(int(m.group(1)), int(m.group(2)))
+        second = Fraction(int(m.group(4)), int(m.group(5)))
+        result = first + second if m.group(3) == "плюс" else first - second
+        return Solution(f"{result.numerator}/{result.denominator}", "fraction")
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*в\s*дробь", q)
+    if m:
+        value = float(m.group(1).replace(",", "."))
+        result = Fraction(value).limit_denominator(100)
+        return Solution(f"{result.numerator}/{result.denominator}", "fraction")
+    return None
 
 
 def _percent(q: str) -> Solution | None:
@@ -199,9 +215,18 @@ def solve(question: str) -> Solution | None:
     if sol:
         return sol
 
+    sol = _fraction(q)
+    if sol:
+        return sol
+
     sol = _simple_math(q)
     if sol:
         return sol
+
+    if re.search(r"\d\s*(плюс|минус)\s*\d", q):
+        value = _safe_eval(q.replace("плюс", "+").replace("минус", "-"))
+        if value is not None:
+            return Solution(_fmt(value), "math")
 
     if re.search(r"сколько\s+(будет|это|равно)", q) or re.fullmatch(r"[\d\s+\-*/().,%^]+", q):
         expr = re.sub(r"^(сколько\s+(будет|это|равно)\s*)", "", q)

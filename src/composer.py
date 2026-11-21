@@ -53,7 +53,7 @@ class Composer:
         return rng.choice(frames).format(f=fact)
 
     # ---------------------------------------------------------------- fallback
-    def dodge(self, question: str, rng: random.Random, topic: str | None = None) -> str:
+    def dodge(self, question: str, rng: random.Random, topic: str | None = None, avoid: list[str] | None = None) -> str:
         if topic == "astana":
             options = [
                 "честно, сам не всё знаю про этот район) но обычно советую просто пройтись и посмотреть",
@@ -81,7 +81,24 @@ class Composer:
                 "слушай, сложно сказать. у всех по-разному же",
                 "ой, я в этом не особо разбираюсь) но интересно",
                 "не помню точно, не хочу врать",
+                "хм, надо подумать. а сам что думаешь?",
+                "не уверен, если честно. давай по-другому спросишь?",
+                "сходу не отвечу, но звучит интересно",
+                "ой, это не ко мне) я в этом не разбираюсь",
+                "даже не знаю, что сказать",
+                "сложный вопрос. зависит от многого",
+                "мне кажется, тут нет одного ответа",
+                "хз, если честно",
+                "не думал об этом. а ты?",
+                "может, ты сам знаешь?)",
+                "я пас, если честно",
+                "это лучше у специалиста спросить",
+                "не моя тема, но слушаю",
             ]
+        if avoid:
+            from .nlp import overlap
+
+            return min(options, key=lambda option: max(overlap(option, prev) for prev in avoid))
         return rng.choice(options)
 
     def hedge(self, text: str, rng: random.Random) -> str:

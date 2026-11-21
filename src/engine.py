@@ -16,7 +16,7 @@ from .composer import Composer
 from .humanizer import Humanizer
 from .index import BM25Index
 from .memory import Memory, Turn
-from .nlp import normalize, tokens
+from .nlp import normalize, overlap, tokens
 from .persona import Persona
 from .retriever import Hit, Retriever
 from .solvers import Solution, solve
@@ -198,10 +198,9 @@ class TuringBot:
         if (
             _TRAP.search(q_norm)
             or _PROVE.search(q_norm)
-            or (predicted == "trap" and intent_prob >= 0.75)
         ):
             return self._finish(
-                self.persona.defense_line(),
+                self.persona.defense_line(self.memory.recent_answers()),
                 intent="trap", topic="trap", source="persona", confidence=0.9,
                 allow_typo=True,
             )
@@ -220,7 +219,7 @@ class TuringBot:
             )
 
         topic = best.item.get("topic") if best else None
-        text = self.composer.dodge(question, self.rng, topic)
+        text = self.composer.dodge(question, self.rng, topic, avoid=self.memory.recent_answers())
         return self._finish(
             text, intent="dodge", topic=topic or "smalltalk", source="dodge",
             confidence=0.0, allow_typo=True,
@@ -232,17 +231,22 @@ class TuringBot:
         predicted: str = "", intent_prob: float = 0.0,
     ) -> Answer:
         item = hit.item
-        variants = [item.get("a", "")] + [item.get(k, "") for k in ("a2", "a3")]
+        variants = [item.get("a", "")] + [
+            item.get(k, "") for k in ("a2", "a3", "a4", "a5", "a6", "a7", "a8")
+        ]
         variants = [v for v in variants if v]
-        text = ""
-        for _ in range(6):
-            candidate = self.rng.choice(variants)
-            if hedged:
-                candidate = self.composer.hedge(candidate, self.rng)
-            text = candidate
-            if self.memory.is_novel(candidate):
-                break
-        if text and not self.memory.is_novel(text):
+        self.rng.shuffle(variants)
+        recent = self.memory.recent_answers()
+
+        def overlap_with_recent(candidate: str) -> float:
+            if not recent:
+                return 0.0
+            return max(overlap(candidate, previous) for previous in recent)
+
+        text = min(variants, key=overlap_with_recent)
+        if hedged:
+            text = self.composer.hedge(text, self.rng)
+        if recent and overlap_with_recent(text) >= 0.62:
             prefix = self.rng.choice(["ну, ", "слушай, ", "кстати, "])
             text = prefix + text[0].lower() + text[1:]
         return self._finish(
@@ -293,7 +297,7 @@ class TuringBot:
         if not text:
             text = PANIC
         if self.use_humanizer:
-            text = self.humanizer.humanize(text, self.rng, allow_typo=allow_typo)
+            text = self.humanizer.humanize(text, self.rng, allow_typo=allow_typo, intent=intent)
         text = text[:300].strip() or PANIC
         return Answer(
             text=text,

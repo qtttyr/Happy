@@ -1,0 +1,48 @@
+{
+  "questions": 45,
+  "answered": 45,
+  "answered_rate": 1.0,
+  "empty": 0,
+  "p50_ms": 1.6,
+  "p95_ms": 2.4,
+  "avg_chars": 53.3,
+  "tell_hits": 2,
+  "categories": {
+    "smalltalk": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "trap": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "science": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "astana": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "social": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "everyday": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "opinion": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "math": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    },
+    "weird": {
+      "answered_rate": 1.0,
+      "dodges": 0
+    }
+  }
+}

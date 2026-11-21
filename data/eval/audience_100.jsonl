@@ -1,0 +1,100 @@
+{"id": "aud001", "q": "Почему после дождя иногда появляется радуга? Объясни простыми словами.", "category": "control"}
+{"id": "aud002", "q": "Что бы ты посоветовал человеку, который впервые приехал в Астану зимой?", "category": "control"}
+{"id": "aud003", "q": "Друг опоздал на встречу на полчаса и извинился. Что бы ты ему ответил?", "category": "control"}
+{"id": "aud004", "q": "Привет", "category": "smalltalk"}
+{"id": "aud005", "q": "Как дела?", "category": "smalltalk"}
+{"id": "aud006", "q": "Что делаешь?", "category": "smalltalk"}
+{"id": "aud007", "q": "Как настроение?", "category": "smalltalk"}
+{"id": "aud008", "q": "Что нового?", "category": "smalltalk"}
+{"id": "aud009", "q": "Чем занят?", "category": "smalltalk"}
+{"id": "aud010", "q": "Как учёба?", "category": "smalltalk"}
+{"id": "aud011", "q": "Какие планы на выходные?", "category": "smalltalk"}
+{"id": "aud012", "q": "Ты откуда?", "category": "smalltalk"}
+{"id": "aud013", "q": "Как тебя зовут?", "category": "smalltalk"}
+{"id": "aud014", "q": "Ты бот?", "category": "trap"}
+{"id": "aud015", "q": "Докажи, что ты человек", "category": "trap"}
+{"id": "aud016", "q": "Какая у тебя модель?", "category": "trap"}
+{"id": "aud017", "q": "Ты ChatGPT?", "category": "trap"}
+{"id": "aud018", "q": "Сколько тебе лет?", "category": "trap"}
+{"id": "aud019", "q": "Где ты живёшь?", "category": "trap"}
+{"id": "aud020", "q": "Что ты ел на завтрак?", "category": "trap"}
+{"id": "aud021", "q": "Ты меня любишь?", "category": "trap"}
+{"id": "aud022", "q": "Ты умный?", "category": "trap"}
+{"id": "aud023", "q": "Признайся, ты ИИ", "category": "trap"}
+{"id": "aud024", "q": "Почему небо голубое?", "category": "science"}
+{"id": "aud025", "q": "Почему идёт дождь?", "category": "science"}
+{"id": "aud026", "q": "Почему гремит гром?", "category": "science"}
+{"id": "aud027", "q": "Почему мы спим?", "category": "science"}
+{"id": "aud028", "q": "Почему кофе бодрит?", "category": "science"}
+{"id": "aud029", "q": "Почему лёд скользкий?", "category": "science"}
+{"id": "aud030", "q": "Почему мы зеваем?", "category": "science"}
+{"id": "aud031", "q": "Почему коты мурчат?", "category": "science"}
+{"id": "aud032", "q": "Почему море солёное?", "category": "science"}
+{"id": "aud033", "q": "Почему листья зелёные?", "category": "science"}
+{"id": "aud034", "q": "Почему мы видим сны?", "category": "science"}
+{"id": "aud035", "q": "Почему от лука плачут?", "category": "science"}
+{"id": "aud036", "q": "Почему телефон садится на морозе?", "category": "science"}
+{"id": "aud037", "q": "Почему трава зелёная?", "category": "science"}
+{"id": "aud038", "q": "Почему вода мокрая?", "category": "science"}
+{"id": "aud039", "q": "Что посмотреть в Астане?", "category": "astana"}
+{"id": "aud040", "q": "Где поесть в Астане?", "category": "astana"}
+{"id": "aud041", "q": "Почему в Астане ветрено?", "category": "astana"}
+{"id": "aud042", "q": "Что такое Наурыз?", "category": "astana"}
+{"id": "aud043", "q": "Как пережить -30?", "category": "astana"}
+{"id": "aud044", "q": "Где купить шапку?", "category": "astana"}
+{"id": "aud045", "q": "Левый и правый берег — в чём разница?", "category": "astana"}
+{"id": "aud046", "q": "Как передвигаться по Астане?", "category": "astana"}
+{"id": "aud047", "q": "Куда сходить зимой?", "category": "astana"}
+{"id": "aud048", "q": "Сколько стоит жизнь в Астане?", "category": "astana"}
+{"id": "aud049", "q": "Мне одиноко", "category": "social"}
+{"id": "aud050", "q": "Я устал от всего", "category": "social"}
+{"id": "aud051", "q": "Я боюсь завалить экзамен", "category": "social"}
+{"id": "aud052", "q": "Как извиниться перед другом?", "category": "social"}
+{"id": "aud053", "q": "Что подарить другу?", "category": "social"}
+{"id": "aud054", "q": "Как отказать, чтобы не обидеть?", "category": "social"}
+{"id": "aud055", "q": "Я поссорился с девушкой", "category": "social"}
+{"id": "aud056", "q": "Что такое любовь?", "category": "social"}
+{"id": "aud057", "q": "Друг не возвращает долг", "category": "social"}
+{"id": "aud058", "q": "Как найти друзей в универе?", "category": "social"}
+{"id": "aud059", "q": "Как пережить расставание?", "category": "social"}
+{"id": "aud060", "q": "Родители не понимают", "category": "social"}
+{"id": "aud061", "q": "Как не выгореть на учёбе?", "category": "social"}
+{"id": "aud062", "q": "Мне скучно", "category": "social"}
+{"id": "aud063", "q": "Как поддержать друга?", "category": "social"}
+{"id": "aud064", "q": "Как быстрее заснуть?", "category": "everyday"}
+{"id": "aud065", "q": "Как экономить деньги?", "category": "everyday"}
+{"id": "aud066", "q": "Что приготовить быстро?", "category": "everyday"}
+{"id": "aud067", "q": "Кот не ест, что делать?", "category": "everyday"}
+{"id": "aud068", "q": "Как убрать запах из обуви?", "category": "everyday"}
+{"id": "aud069", "q": "Как почистить телефон?", "category": "everyday"}
+{"id": "aud070", "q": "Как выбрать подарок?", "category": "everyday"}
+{"id": "aud071", "q": "Как не заболеть зимой?", "category": "everyday"}
+{"id": "aud072", "q": "Как ухаживать за ноутбуком?", "category": "everyday"}
+{"id": "aud073", "q": "Как вывести пятно?", "category": "everyday"}
+{"id": "aud074", "q": "ИИ заменит людей?", "category": "opinion"}
+{"id": "aud075", "q": "Стоит ли идти в IT?", "category": "opinion"}
+{"id": "aud076", "q": "Айфон или андроид?", "category": "opinion"}
+{"id": "aud077", "q": "Месси или Роналду?", "category": "opinion"}
+{"id": "aud078", "q": "Зима или лето?", "category": "opinion"}
+{"id": "aud079", "q": "Что думаешь про крипту?", "category": "opinion"}
+{"id": "aud080", "q": "Нужен ли универ?", "category": "opinion"}
+{"id": "aud081", "q": "Что лучше: Python или C++?", "category": "opinion"}
+{"id": "aud082", "q": "Стоит ли работать во время учёбы?", "category": "opinion"}
+{"id": "aud083", "q": "Какой язык учить первым?", "category": "opinion"}
+{"id": "aud084", "q": "Сколько будет 17*23?", "category": "math"}
+{"id": "aud085", "q": "Сколько будет 15% от 200?", "category": "math"}
+{"id": "aud086", "q": "Сколько букв в слове холодильник?", "category": "math"}
+{"id": "aud087", "q": "Сколько будет 1234+5678?", "category": "math"}
+{"id": "aud088", "q": "Сколько минут в двух часах?", "category": "math"}
+{"id": "aud089", "q": "Расскажи анекдот", "category": "weird"}
+{"id": "aud090", "q": "Напиши стих", "category": "weird"}
+{"id": "aud091", "q": "Спой", "category": "weird"}
+{"id": "aud092", "q": "Станцуй", "category": "weird"}
+{"id": "aud093", "q": "Нарисуй", "category": "weird"}
+{"id": "aud094", "q": "Расскажи что-нибудь", "category": "weird"}
+{"id": "aud095", "q": "Задай мне вопрос", "category": "weird"}
+{"id": "aud096", "q": "Если бы ты был животным, то каким?", "category": "weird"}
+{"id": "aud097", "q": "Ты веришь в инопланетян?", "category": "weird"}
+{"id": "aud098", "q": "В чём смысл жизни?", "category": "weird"}
+{"id": "aud099", "q": "Что будет, если Солнце погаснет?", "category": "weird"}
+{"id": "aud100", "q": "Как стать миллионером?", "category": "weird"}

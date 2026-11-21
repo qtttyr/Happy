@@ -33,6 +33,27 @@ _BOOKISH: list[tuple[str, str]] = [
     (r"\bдостаточно\s+", "довольно "),
 ]
 
+_ZOOMER: list[tuple[str, str]] = [
+    (r"\bЭто нормально, так бывает\b", "да бывает"),
+    (r"\bЭто нормально\b", "да норм"),
+    (r"\bЯ бы начал[а]? с малого\b", "ну начни с мелочи"),
+    (r"\bс малого\b", "с мелочи"),
+    (r"\bсмена картинки\b", "смена обстановки"),
+    (r"\bНе геройствуй\b", "не выпендривайся"),
+    (r"\bРеально спасает\b", "спасает"),
+    (r"\bЭто не слабость\b", "да не, ты чё"),
+    (r"\bПопробуй\b", "ну попробуй"),
+    (r"\bК сожалению\b", "увы"),
+    (r"\bВ целом\b", "вообще"),
+    (r"\bОднако\b", "но"),
+    (r"\bНеобходимо\b", "надо"),
+    (r"\bЯ считаю,?\s*что\b", "по-моему"),
+    (r"\bКонечно\b", "ну да"),
+    (r"\bОтличный вопрос\b", "хм"),
+    (r"\bРекомендую\b", "советую"),
+    (r"\bТем не менее\b", "но"),
+]
+
 _TYPO_SAFE = re.compile(r"^[а-яa-z]{6,}$")
 
 
@@ -43,11 +64,16 @@ class Humanizer:
 
     # ------------------------------------------------------------------ public
     def humanize(
-        self, text: str, rng: random.Random | None = None, allow_typo: bool = False
+        self,
+        text: str,
+        rng: random.Random | None = None,
+        allow_typo: bool = False,
+        intent: str = "",
     ) -> str:
         rng = rng or random
         text = self._clean(text)
         text = self._debookish(text)
+        text = self._lazy(text, rng, intent)
         text = self._case(text, rng)
         text = self._trim(text)
         text = self._punctuation(text, rng)
@@ -72,8 +98,24 @@ class Humanizer:
         text = re.sub(r"\s*-\s*", " - ", text) if " - " in text else text
         return text
 
+    def _lazy(self, text: str, rng: random.Random, intent: str) -> str:
+        low = text.lower()
+        if intent in {"smalltalk", "opinion"} and rng.random() < 0.12:
+            if (
+                len(text) > 70
+                and not text.endswith(("?", "...", ")", "…"))
+                and "а ты" not in low
+            ):
+                text += ", " + rng.choice(["ну как-то так", "вроде", "ну такое", "лан"])
+        if intent in {"smalltalk", "dodge"} and rng.random() < 0.10:
+            if text and not text[0].isdigit() and not low.startswith(("да", "не", "ну")):
+                text = rng.choice(["ну ", "короче ", "типа "]) + text[0].lower() + text[1:]
+        return text
+
     def _debookish(self, text: str) -> str:
         for pattern, repl in _BOOKISH:
+            text = re.sub(pattern, repl, text, flags=re.IGNORECASE)
+        for pattern, repl in _ZOOMER:
             text = re.sub(pattern, repl, text, flags=re.IGNORECASE)
         text = re.sub(r"[,;:]\s*\)", ")", text)
         text = re.sub(r"\s+\)", ")", text)
@@ -93,6 +135,8 @@ class Humanizer:
                 and not proper
             ):
                 text = text[0].lower() + text[1:]
+        if rng.random() < 0.5:
+            text = re.sub(r"\bЯ\b", "я", text)
         return text
 
     def _trim(self, text: str) -> str:
