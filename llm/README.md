@@ -64,6 +64,13 @@ cd "/Users/miras/Desktop/Mira AI/Happy/happy"
 5. `SMOKE = False` — полный прогон.
 6. **Save & Run All (Commit)** и можно закрыть ноутбук.
 
+После прогона:
+
+```bash
+python llm/pull.py --repo vaprooll/Happy-LLM --run llm-main
+python llm/sample.py --run llm-main --tokenizer llm/artifacts/llm-main/tokenizer.json
+```
+
 ### Почему ничего не теряется
 
 - каждые 500 шагов — чекпоинт в `/kaggle/working/llm/checkpoints/{run}/`;
