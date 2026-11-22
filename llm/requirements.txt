@@ -1,0 +1,5 @@
+tokenizers>=0.20
+numpy>=2.0
+torch>=2.4
+huggingface-hub>=0.30
+tqdm>=4.66

@@ -12,3 +12,10 @@ happy-artifacts-*.zip
 artifacts/checkpoints/
 
 private/
+llm/data/*.bin
+llm/data/tokenizer.json
+llm/data/meta.json
+llm/data_smoke/
+llm/checkpoints/
+llm/artifacts/
+llm/raw/
